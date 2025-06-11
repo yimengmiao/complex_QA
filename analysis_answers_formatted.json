@@ -1,0 +1,1001 @@
+[
+  {
+    "paper_id": "0",
+    "question": "Which of the following factors may cause multilingual large language models to show English bias when processing non-English languages? A. The model's training data mainly consists of English text. B. The model uses English as the central language in the middle layer for semantic understanding and reasoning. C. In the model's word embedding space, English word embeddings are more densely distributed and easier to be 'captured' by the model. D. The model translates non-English text into English before translating it into the target language.",
+    "correct_answer": "ABC"
+  },
+  {
+    "paper_id": "0",
+    "question": "Which of the following best describes the three-phase process observed in Llama-2 models when processing non-English prompts?",
+    "correct_answer": "B"
+  },
+  {
+    "paper_id": "0",
+    "question": "Which of the following statements are supported by the study? A. Intermediate layers of Llama-2 exhibit higher probabilities for English tokens than the input language, even when prompted in non-English. B. The model’s 'concept space' is entirely language-agnostic and shows no bias toward English. C. Token energy (proximity to output embeddings) sharply increases in the final layers, aligning with language-specific predictions. D. Early-layer embeddings are highly aligned with output token distributions, resulting in low entropy.",
+    "correct_answer": "A"
+  },
+  {
+    "paper_id": "1",
+    "question": "Which of the following statements about LLMs understanding different input formats from knowledge graphs are correct? A. LLMs with larger scale are more robust to noisy, incomplete subgraphs. B. Large language models are better able to capture answer-related information when processing linearized triples. C. Natural language text outperforms linearized triples in fact-intensive QA. D. Different large language models have different preferences for different ways of organizing triples.",
+    "correct_answer": "BD"
+  },
+  {
+    "paper_id": "1",
+    "question": "Which of the following statements are correct about how LLMs use KG information in QA?",
+    "correct_answer": "ABD"
+  },
+  {
+    "paper_id": "1",
+    "question": "According to the research in the paper, which of the following conclusions about format effectiveness are supported?",
+    "correct_answer": "AB"
+  },
+  {
+    "paper_id": "2",
+    "question": "According to the paper, what are some primary advantages of using Dual Masked KL-divergence (DMK) in SIU?",
+    "correct_answer": "AC"
+  },
+  {
+    "paper_id": "2",
+    "question": "What are the main evaluation criteria proposed by the authors in MMUBench for assessing unlearning methods in Multimodal LLMs?",
+    "correct_answer": "ABCD"
+  },
+  {
+    "paper_id": "2",
+    "question": "Based on the experiments comparing SIU to baseline approaches such as Gradient Ascent (GA) and GA+KL, which of the following observations are accurate?",
+    "correct_answer": "ABD"
+  },
+  {
+    "paper_id": "3",
+    "question": "Which of the following statements accurately describe the three tasks introduced in the MIKE benchmark?",
+    "correct_answer": "AD"
+  },
+  {
+    "paper_id": "3",
+    "question": "From the experiments conducted on BLIP-2 and MiniGPT-4, which of the following observations are supported?",
+    "correct_answer": "B"
+  },
+  {
+    "paper_id": "3",
+    "question": "What are potential advantages of applying Multi-Step Editing (as described in MIKE)?",
+    "correct_answer": "AC"
+  },
+  {
+    "paper_id": "5",
+    "question": "Which evaluation metrics are used to measure KoPA's performance? A. MRR B. Precision C. Hits@10 D. Recall",
+    "correct_answer": "BD"
+  },
+  {
+    "paper_id": "5",
+    "question": "To improve the performance of LLMs in KG completion tasks, which of the following strategies is most emphasized in the paper?",
+    "correct_answer": "B"
+  },
+  {
+    "paper_id": "5",
+    "question": "In the paper 'Making Large Language Models Perform Better in Knowledge Graph Completion', which approach is proposed to enhance missing link completion?",
+    "correct_answer": "C"
+  },
+  {
+    "paper_id": "5",
+    "question": "The novel contributions identified in the paper include which of the following?",
+    "correct_answer": "ABD"
+  },
+  {
+    "paper_id": "5",
+    "question": "Which findings are highlighted in the main experiment for the triple classification task?",
+    "correct_answer": "BCD"
+  },
+  {
+    "paper_id": "10",
+    "question": "Which techniques are introduced in the paper to enhance KG-to-text generation?",
+    "correct_answer": "ACD"
+  },
+  {
+    "paper_id": "11",
+    "question": "To which tasks is the framework of this paper applicable?",
+    "correct_answer": "AB"
+  },
+  {
+    "paper_id": "11",
+    "question": "To which tasks is the framework of this paper inapplicable?",
+    "correct_answer": "CD"
+  },
+  {
+    "paper_id": "12",
+    "question": "Which datasets contain hierarchical tables?",
+    "correct_answer": "AB"
+  },
+  {
+    "paper_id": "13",
+    "question": "Which strategy combinations show largest improvement in Spearman correlation according to MATEval?",
+    "correct_answer": "C"
+  },
+  {
+    "paper_id": "13",
+    "question": "How does the MATEval framework’s design potentially influence the future development of AI?",
+    "correct_answer": "ABC"
+  },
+  {
+    "paper_id": "13",
+    "question": "What ethical or practical challenges might arise from deploying the MATEval framework?",
+    "correct_answer": "ABC"
+  },
+  {
+    "paper_id": "14",
+    "question": "Which of the following features does DEE have that traditional methods like ROUGE and BLEU do not?",
+    "correct_answer": "BD"
+  },
+  {
+    "paper_id": "14",
+    "question": "Which of the following are true about DEE's efficiency?",
+    "correct_answer": "ABCD"
+  },
+  {
+    "paper_id": "14",
+    "question": "Which of the following error types does DEE specifically address that traditional methods like ROUGE and BLEU do not?",
+    "correct_answer": "BC"
+  },
+  {
+    "paper_id": "15",
+    "question": "In Example 3, list the number of axioms that are contained in the resulting set of wanted inclusion assertions.",
+    "correct_answer": "B"
+  },
+  {
+    "paper_id": "16",
+    "question": "What relations between concepts exist in LOS? A. IsA B. Equal C. Relate D. owl:sameAs",
+    "correct_answer": "BC"
+  },
+  {
+    "paper_id": "17",
+    "question": "When the input is only a screenshot, which baseline LLM or VLM is used as the backbone?",
+    "correct_answer": "A"
+  },
+  {
+    "paper_id": "17",
+    "question": "What functions does OSWORLD provide as agent actions? A. moveTo B. keLeft C. Press D. dragTo",
+    "correct_answer": "ACD"
+  },
+  {
+    "paper_id": "18",
+    "question": "Why use the feedback of question-answering models for preference fine-tuning?",
+    "correct_answer": "D"
+  },
+  {
+    "paper_id": "18",
+    "question": "Why use ChatGPT for data augmentation?",
+    "correct_answer": "B"
+  },
+  {
+    "paper_id": "18",
+    "question": "Why use Accuracy, Recall and EM as three evaluation metrics?",
+    "correct_answer": "ABCD"
+  },
+  {
+    "paper_id": "19",
+    "question": "Which of the following best justifies the use of success rate and executability for evaluating task planning?",
+    "correct_answer": "D"
+  },
+  {
+    "paper_id": "19",
+    "question": "Can our method be applied to open-source large language models?",
+    "correct_answer": "D"
+  },
+  {
+    "paper_id": "19",
+    "question": "Why use environmental feedback to verify training data?",
+    "correct_answer": "ABC"
+  },
+  {
+    "paper_id": "20",
+    "question": "Which of the following statements about the training data of LISA model is correct?",
+    "correct_answer": "B"
+  },
+  {
+    "paper_id": "20",
+    "question": "Which of the following statements about the training strategy of LISA model is correct?",
+    "correct_answer": "ABC"
+  },
+  {
+    "paper_id": "20",
+    "question": "Which of the following statements about the architecture design of LISA model is correct?",
+    "correct_answer": "A"
+  },
+  {
+    "paper_id": "21",
+    "question": "According to the article, how does the ontology facilitate the retrieval of in-context examples?",
+    "correct_answer": "A"
+  },
+  {
+    "paper_id": "21",
+    "question": "Which of the following statements about the Recall, Retrieve, and Reason framework are incorrect?",
+    "correct_answer": "B"
+  },
+  {
+    "paper_id": "21",
+    "question": "Which of the following statements about the experimental results in the article are correct?",
+    "correct_answer": "BCD"
+  },
+  {
+    "paper_id": "22",
+    "question": "Which of the following statements about KG-enhanced Chunk Retrieval are correct?",
+    "correct_answer": ""
+  },
+  {
+    "paper_id": "22",
+    "question": "Which of the following statements about KG-based Context Organization are incorrect?",
+    "correct_answer": "A"
+  },
+  {
+    "paper_id": "22",
+    "question": "Which of the following statements about the experiments in this paper are correct?",
+    "correct_answer": ""
+  },
+  {
+    "paper_id": "23",
+    "question": "Which of the following are true about the StructLM model?",
+    "correct_answer": "BD"
+  },
+  {
+    "paper_id": "23",
+    "question": "What types of structured data are used in the training of StructLM?",
+    "correct_answer": "BCD"
+  },
+  {
+    "paper_id": "24",
+    "question": "Based on the experimental section of the article, which of the following parameters are hyperparameters?",
+    "correct_answer": "ABD"
+  },
+  {
+    "paper_id": "25",
+    "question": "Based on the analysis in the paper, which of the following statements accurately reflect the implications of the selected model?",
+    "correct_answer": ""
+  },
+  {
+    "paper_id": "25",
+    "question": "What are potential implications of the selected model in the context of the research findings?",
+    "correct_answer": ""
+  }
+]
+[
+    {
+        "paper_id": "27",
+        "question": "Which of the following datasets were used when evaluating function vector interventions?",
+        "correct_answer": "ABD"
+    },
+    {
+        "paper_id": "27",
+        "question": "Which of the following types of CL methods were NOT implemented with FV on Mistral-7B?",
+        "correct_answer": "CD"
+    },
+    {
+        "paper_id": "27",
+        "question": "Which of the following statements accurately describe the phenomenon of CF in LLMs?",
+        "correct_answer": "BC"
+    },
+    {
+        "paper_id": "28",
+        "question": "Which of the following statement about the LLMs generating version-compatible code is correct?",
+        "correct_answer": "D"
+    },
+    {
+        "paper_id": "28",
+        "question": "Which of the following statements are correct about LLMs facing with dynamic nature of libraries?",
+        "correct_answer": "D"
+    },
+    {
+        "paper_id": "28",
+        "question": "According to this paper, which statements below of the metric CDC are correct?",
+        "correct_answer": "AC"
+    },
+    {
+        "paper_id": "29",
+        "question": "Which of the following components are explicitly mentioned in CodeGRAG's methodology?",
+        "correct_answer": "BCD"
+    },
+    {
+        "paper_id": "29",
+        "question": "Which of the statements below of the experiments results of CodeGRAG are correct?",
+        "correct_answer": "AD"
+    },
+    {
+        "paper_id": "29",
+        "question": "What metrics or criteria were used in the evaluation of CodeGRAG's performance?",
+        "correct_answer": "B"
+    }
+]
+[
+  {
+    "paper_id": "30",
+    "question": "Attrributed triple is an ideal knowledge representation form because:",
+    "correct_answer": "B"
+  },
+  {
+    "paper_id": "30",
+    "question": "Why contrastive learning module is employed in the extraction model?",
+    "correct_answer": "C"
+  },
+  {
+    "paper_id": "30",
+    "question": "The extraction model for attributed triples can be improved from:",
+    "correct_answer": "BCD"
+  },
+  {
+    "paper_id": "31",
+    "question": "To ensure that LLMs provide more reliable and contextually relevant responses during RAG, which of the following statements are correct?",
+    "correct_answer": "B"
+  },
+  {
+    "paper_id": "31",
+    "question": "Considering the potential risks associated with RAG systems, which rely on external knowledge sources, which statements are accurate?",
+    "correct_answer": "ABCD"
+  },
+  {
+    "paper_id": "31",
+    "question": "Considering the novel vulnerabilities introduced by RAG systems, how does the PoisonedRAG attack work?",
+    "correct_answer": "B"
+  },
+  {
+    "paper_id": "31",
+    "question": "Regarding knowledge poisoning attacks on RAG systems, the following statements are accurate:",
+    "correct_answer": "ABCD"
+  },
+  {
+    "paper_id": "32",
+    "question": "Which of the following best describes the goal of advanced RAG techniques concerning imperfect retrieval?",
+    "correct_answer": "A"
+  },
+  {
+    "paper_id": "32",
+    "question": "Which approach most effectively mitigates the negative consequences of flawed information retrieval?",
+    "correct_answer": "B"
+  },
+  {
+    "paper_id": "32",
+    "question": "The following statements accurately describe the challenges discussed in the proposed RAG architecture:",
+    "correct_answer": "ABCD"
+  }
+]
+[
+  {
+    "paper_id": "33",
+    "question": "What is the main advantage of using rule-enhanced LLMs (ReLLMs) over traditional LLMs?",
+    "correct_answer": "A"
+  },
+  {
+    "paper_id": "33",
+    "question": "Which of the following describe how rules are used in ReLLMs?",
+    "correct_answer": "AC"
+  },
+  {
+    "paper_id": "33",
+    "question": "Which of the following statements are correct based on the experiments with ReLLMs?",
+    "correct_answer": "AD"
+  },
+  {
+    "paper_id": "34",
+    "question": "Which of the following challenges of tabular VQA do the authors aim to address?",
+    "correct_answer": "AC"
+  },
+  {
+    "paper_id": "34",
+    "question": "Which of the following statements accurately describe the Row-Column Intersection mechanism?",
+    "correct_answer": "AB"
+  },
+  {
+    "paper_id": "35",
+    "question": "Which of the following findings are reported in the experimental evaluation of OpenVigil?",
+    "correct_answer": "ACD"
+  },
+  {
+    "paper_id": "35",
+    "question": "Which of the following statements accurately describe OpenVigil's retrieval component?",
+    "correct_answer": "AB"
+  },
+  {
+    "paper_id": "35",
+    "question": "Which of the following ablation results support OpenVigil’s modular architecture?",
+    "correct_answer": "CD"
+  }
+]
+[
+  {
+    "paper_id": "36",
+    "question": "Which of the following methods are proposed in the paper to improve robustness in VQA models?",
+    "correct_answer": "AB"
+  },
+  {
+    "paper_id": "36",
+    "question": "What types of perturbations were used to evaluate the robustness of VQA models?",
+    "correct_answer": "ABCD"
+  },
+  {
+    "paper_id": "36",
+    "question": "Which of the following statements about the experimental findings are correct?",
+    "correct_answer": "ABC"
+  },
+  {
+    "paper_id": "37",
+    "question": "What are the key components of the proposed grounding-enhanced captioning approach?",
+    "correct_answer": "ACD"
+  },
+  {
+    "paper_id": "37",
+    "question": "What distinguishes the proposed model from traditional image captioning methods?",
+    "correct_answer": "AD"
+  },
+  {
+    "paper_id": "37",
+    "question": "Which of the following statements accurately reflect the experimental results of the grounding-enhanced captioning model?",
+    "correct_answer": "ABC"
+  },
+  {
+    "paper_id": "38",
+    "question": "Which of the following best describes the semantic-level faithfulness evaluation framework?",
+    "correct_answer": "C"
+  },
+  {
+    "paper_id": "38",
+    "question": "Which factors are considered in the model’s evaluation of hallucinated content?",
+    "correct_answer": "ABD"
+  },
+  {
+    "paper_id": "38",
+    "question": "What improvements does the proposed method show compared to baseline models?",
+    "correct_answer": "AB"
+  }
+]
+[
+  {
+    "paper_id": "39",
+    "question": "What are the main limitations of existing multimodal large language models discussed in the paper?",
+    "correct_answer": "AC"
+  },
+  {
+    "paper_id": "39",
+    "question": "Which improvements does the paper propose for instruction tuning in multimodal models?",
+    "correct_answer": "BD"
+  },
+  {
+    "paper_id": "39",
+    "question": "Which experimental findings support the effectiveness of the proposed method?",
+    "correct_answer": "AB"
+  },
+  {
+    "paper_id": "40",
+    "question": "What are the three main components of the proposed multimodal reasoning benchmark?",
+    "correct_answer": "ACD"
+  },
+  {
+    "paper_id": "40",
+    "question": "Which of the following statements are true about the experimental results on the benchmark?",
+    "correct_answer": "BD"
+  },
+  {
+    "paper_id": "40",
+    "question": "What design principles are followed in constructing the benchmark dataset?",
+    "correct_answer": "AB"
+  },
+  {
+    "paper_id": "41",
+    "question": "What challenges in multimodal dialogue are addressed by the proposed framework?",
+    "correct_answer": "ABC"
+  },
+  {
+    "paper_id": "41",
+    "question": "Which components are included in the model architecture described in the paper?",
+    "correct_answer": "ACD"
+  },
+  {
+    "paper_id": "41",
+    "question": "Which findings demonstrate the advantages of the proposed approach in dialogue scenarios?",
+    "correct_answer": "ABD"
+  }
+]
+[
+  {
+    "paper_id": "42",
+    "question": "What is the key innovation introduced by the VLPrompt method?",
+    "correct_answer": "AC"
+  },
+  {
+    "paper_id": "42",
+    "question": "Which components are essential in the VLPrompt training pipeline?",
+    "correct_answer": "ABD"
+  },
+  {
+    "paper_id": "42",
+    "question": "Which results demonstrate the effectiveness of VLPrompt in multimodal few-shot learning tasks?",
+    "correct_answer": "BCD"
+  },
+  {
+    "paper_id": "43",
+    "question": "Which of the following statements about agent strategies and performance evaluation in CODEAGENT are accurate?",
+    "correct_answer": "C"
+  },
+  {
+    "paper_id": "43",
+    "question": "Which of the following programming tools are integrated into the CODEAGENT framework?",
+    "correct_answer": "ABD"
+  },
+  {
+    "paper_id": "44",
+    "question": "Which of the following are goals of EFSUM in fact summarization for QA tasks?",
+    "correct_answer": "ABC"
+  },
+  {
+    "paper_id": "44",
+    "question": "What are key components of the EFSUMdistill training process?",
+    "correct_answer": "ABC"
+  }
+]
+[
+  {
+    "paper_id": "45",
+    "question": "What are the key contributions of the proposed model for long video understanding?",
+    "correct_answer": "ABD"
+  },
+  {
+    "paper_id": "45",
+    "question": "Which components are integrated into the model architecture for long video processing?",
+    "correct_answer": "ACD"
+  },
+  {
+    "paper_id": "45",
+    "question": "Which experimental results demonstrate the advantages of the proposed long video model?",
+    "correct_answer": "AB"
+  },
+  {
+    "paper_id": "46",
+    "question": "Which challenges in document-level event argument extraction does the paper aim to solve?",
+    "correct_answer": "ABC"
+  },
+  {
+    "paper_id": "46",
+    "question": "Which techniques are proposed to address sparsity and context dependency in the extraction task?",
+    "correct_answer": "ABD"
+  },
+  {
+    "paper_id": "46",
+    "question": "What results support the model’s performance on benchmark datasets?",
+    "correct_answer": "AB"
+  },
+  {
+    "paper_id": "47",
+    "question": "What is the primary purpose of introducing MultiInstruct in instruction tuning?",
+    "correct_answer": "AB"
+  },
+  {
+    "paper_id": "47",
+    "question": "Which components are part of the MultiInstruct training strategy?",
+    "correct_answer": "ACD"
+  },
+  {
+    "paper_id": "47",
+    "question": "Which findings highlight the effectiveness of MultiInstruct in multilingual settings?",
+    "correct_answer": "BCD"
+  }
+]
+[
+  {
+    "paper_id": "48",
+    "question": "Which challenges or limitations of LLMs are addressed by integrating KGs, according to the paper?",
+    "correct_answer": "A"
+  },
+  {
+    "paper_id": "49",
+    "question": "Which of the following statements accurately differentiate FanOutQA from prior multi-hop QA benchmarks like HotpotQA and MuSiQue?",
+    "correct_answer": "ABC"
+  },
+  {
+    "paper_id": "49",
+    "question": "Which statements correctly describe the strengths of TSED and GPT-based metrics for code evaluation?",
+    "correct_answer": "BC"
+  },
+  {
+    "paper_id": "50",
+    "question": "Which of the following findings suggest that language models do not naturally organize knowledge chronologically?",
+    "correct_answer": "AC"
+  },
+  {
+    "paper_id": "50",
+    "question": "What counterintuitive effects were observed regarding different alignment strategies?",
+    "correct_answer": "ABCD"
+  },
+  {
+    "paper_id": "50",
+    "question": "What generalization abilities were demonstrated by PH3 that exceeded initial expectations?",
+    "correct_answer": "A"
+  }
+]
+[
+  {
+    "paper_id": "51",
+    "question": "What are the key benefits of the proposed MLLM editing method described in the paper?",
+    "correct_answer": "AC"
+  },
+  {
+    "paper_id": "51",
+    "question": "Which tasks are used to evaluate the effectiveness of the model editing techniques?",
+    "correct_answer": "ABD"
+  },
+  {
+    "paper_id": "51",
+    "question": "Which experimental findings demonstrate the strengths or limitations of the proposed editing framework?",
+    "correct_answer": "BCD"
+  },
+  {
+    "paper_id": "52",
+    "question": "Which problems in video understanding does the proposed pretraining method aim to solve?",
+    "correct_answer": "AB"
+  },
+  {
+    "paper_id": "52",
+    "question": "What components are integrated into the framework to improve video-language representation learning?",
+    "correct_answer": "ACD"
+  },
+  {
+    "paper_id": "52",
+    "question": "Which results support the superiority of the method on benchmark video-language tasks?",
+    "correct_answer": "AB"
+  },
+  {
+    "paper_id": "53",
+    "question": "What are the main components of the proposed benchmark for interactive multimodal agents?",
+    "correct_answer": "ABD"
+  },
+  {
+    "paper_id": "53",
+    "question": "What experimental results demonstrate the effectiveness of the proposed agent evaluation framework?",
+    "correct_answer": "ABC"
+  },
+  {
+    "paper_id": "53",
+    "question": "What challenges in multimodal agent alignment are addressed by the paper?",
+    "correct_answer": "ACD"
+  }
+]
+[
+  {
+    "paper_id": "54",
+    "question": "What are the main challenges in aligning multimodal agents addressed by this paper?",
+    "correct_answer": "ABC"
+  },
+  {
+    "paper_id": "54",
+    "question": "Which methods are proposed to evaluate or enhance alignment in the benchmark?",
+    "correct_answer": "ACD"
+  },
+  {
+    "paper_id": "54",
+    "question": "What experimental results support the improvements introduced by the benchmark framework?",
+    "correct_answer": "ABD"
+  },
+  {
+    "paper_id": "55",
+    "question": "What are the key innovations introduced by the proposed OpenAGENT framework?",
+    "correct_answer": "BCD"
+  },
+  {
+    "paper_id": "55",
+    "question": "Which modules or tools are integrated into OpenAGENT to enable real-world interaction?",
+    "correct_answer": "ACD"
+  },
+  {
+    "paper_id": "55",
+    "question": "Which findings validate the effectiveness of OpenAGENT in realistic multimodal tasks?",
+    "correct_answer": "ABC"
+  },
+  {
+    "paper_id": "56",
+    "question": "What problems in long-horizon task planning does the proposed model aim to solve?",
+    "correct_answer": "ABD"
+  },
+  {
+    "paper_id": "56",
+    "question": "Which components are central to the MLDT (Multi-Level Decomposition Tree) architecture?",
+    "correct_answer": "ABC"
+  },
+  {
+    "paper_id": "56",
+    "question": "What experimental outcomes demonstrate the effectiveness of the model in planning benchmarks?",
+    "correct_answer": "ACD"
+  }
+]
+[
+  {
+    "paper_id": "57",
+    "question": "What are the advantages of using environmental feedback in training data verification?",
+    "correct_answer": "ABC"
+  },
+  {
+    "paper_id": "57",
+    "question": "Which techniques are introduced to correct errors in environment-generated plans?",
+    "correct_answer": "ACD"
+  },
+  {
+    "paper_id": "57",
+    "question": "Which findings validate the effectiveness of the corrected training process?",
+    "correct_answer": "ABD"
+  },
+  {
+    "paper_id": "58",
+    "question": "Which methods are proposed in the paper for improving spreadsheet understanding?",
+    "correct_answer": "ABD"
+  },
+  {
+    "paper_id": "58",
+    "question": "What are the components of the TabChart framework?",
+    "correct_answer": "ABC"
+  },
+  {
+    "paper_id": "58",
+    "question": "What results show the performance of TabChart on real-world spreadsheet benchmarks?",
+    "correct_answer": "ACD"
+  },
+  {
+    "paper_id": "59",
+    "question": "What techniques are introduced to enable model understanding of tabular document structures?",
+    "correct_answer": "AC"
+  },
+  {
+    "paper_id": "59",
+    "question": "Which components are used in the proposed hierarchical encoder framework?",
+    "correct_answer": "ABD"
+  },
+  {
+    "paper_id": "59",
+    "question": "What are the evaluation results showing effectiveness on table-based question answering tasks?",
+    "correct_answer": "ABC"
+  }
+]
+[
+  {
+    "paper_id": "60",
+    "question": "Based on the concept of prompt engineering discussed in the context of DDPrompt, which statements are true?",
+    "correct_answer": "BD"
+  },
+  {
+    "paper_id": "62",
+    "question": "In the context of the paper \"Joint Model of Entity Recognition and Relation Extraction with Self-attention Mechanism,\" which statements are accurate?",
+    "correct_answer": "C"
+  },
+  {
+    "paper_id": "62",
+    "question": "Which components of the proposed joint model contribute to its ability to capture word dependencies and extract multiple relations for an entity?",
+    "correct_answer": "ABC"
+  }
+]
+[
+  {
+    "paper_id": "63",
+    "question": "Question: Which of the following settings in the FanOutQA benchmark is used to assess the performance of LLMs when they are provided with relevant Wikipedia articles, focusing on long-context and multi-hop reasoning capabilities across these documents?\nA. Closed Book setting, where models exclusively rely on parametric memory without retrieving external data, testing only intra-document pattern recognition.\nB. Evidence Provided setting, which supplies pre-selected evidence passages, evaluating token-level granularity in cross-document attention mechanisms and inter-dependency resolution.\nC. Open Book setting, enabling dynamic corpus updates via retrieval tools, prioritizing syntactic parsing heuristics over multi-hop deductive chains.\nD. Closed Data setting, requiring models to infer implicit citations through syntactic parsing while isolating parametric knowledge from external references.",
+    "correct_answer": "B"
+  },
+  {
+    "paper_id": "63",
+    "question": "Which of the following statements about the performance correlations and challenges in FanOutQA’s benchmark settings are supported by the paper?\nA. Models in the closed-book setting exhibit a strong positive correlation between maximum context window size and their ability to answer fan-out questions accurately.\nB. In the open-book setting, models frequently output summaries of the last retrieved passage instead of the final answer due to context window overflow erasing the original question.\nC. The closed-book setting shows no significant correlation between model performance and context length, as it relies solely on internal knowledge rather than retrieved information.\nD. Performance in the evidence-provided setting has a stronger correlation with context window length than in the open-book setting, as including more documents directly improves reasoning accuracy.",
+    "correct_answer": "BCD"
+  },
+  {
+    "paper_id": "63",
+    "question": "Which of the following findings about human evaluators in the open-book setting are documented in the FanOutQA study?\nA. Human volunteers achieved an 85% upper-bound accuracy when answering questions with access to Wikipedia, demonstrating significantly better reasoning than all tested LLMs.\nB. Human performance was measured using a 'loose accuracy' metric of 68.5%, which accounts for partial matches and typographical variations in answers.\nC. The model-judged accuracy for humans (45.2%) was lower than the loose string accuracy because it penalized answers for formatting inconsistencies unrelated to factual correctness.\nD. Humans outperformed all LLMs in the open-book setting, with their accuracy statistically higher than the best model’s performance (p < 0.05).",
+    "correct_answer": "BCD"
+  },
+  {
+    "paper_id": "63",
+    "question": "Which criteria were essential components of FanOutQA's dataset filtering pipeline to ensure question quality?\nA. Removing questions where sub-questions could be answered through alternative Wikipedia article combinations using semantic similarity.\nB. Automatic verification that all sub-question answers are explicitly contained in their respective Wikipedia article bodies.\nC. Requirement that human annotators use question templates derived from existing multi-hop QA benchmarks.\nD. Elimination of questions with multiple valid decomposition strategies through cosine similarity checks on vector embeddings.",
+    "correct_answer": "AB"
+  },
+  {
+    "paper_id": "63",
+    "question": "Which of the following statements accurately differentiate FanOutQA from prior multi-hop QA benchmarks like HotpotQA and MuSiQue?\nA. FanOutQA requires nonlinear reasoning chains with an average of seven hops per question, while earlier datasets focus on linear chains with fewer than four hops.\nB. FanOutQA evaluates inter-document dependencies across natural long-form articles, whereas prior benchmarks rely on artificially constructed documents or single-document comprehension.\nC. FanOutQA includes human-written decompositions for imitation learning, while earlier datasets exclusively use algorithmically generated sub-questions without human annotation.\nD. FanOutQA measures performance using metrics like BLEURT and GPT-4-based factual equivalence, whereas prior benchmarks prioritize ROUGE scores without model-based judgment.",
+    "correct_answer": "ABCD"
+  },
+  {
+    "paper_id": "64",
+    "question": "Which of the following factors were shown to significantly affect model performance in different FanOutQA benchmark settings according to the analysis?\nA. The presence of human-written decompositions during inference correlated with improved reasoning in closed-book settings.\nB. Maximum context window size showed strong positive correlation with accuracy in evidence-provided but not closed-book settings.\nC. Neural text degradation severity inversely correlated with the number of Wikipedia references embedded in model responses.\nD. Performance in open-book settings was hindered by information truncation when combining multiple retrieved documents.",
+    "correct_answer": "ABD"
+  },
+  {
+    "paper_id": "64",
+    "question": "Which of the following statements correctly describe the strengths of TSED and GPT-based similarity scores in evaluating code similarity?\nA. TSED demonstrates higher computational efficiency compared to traditional sequence-based metrics while maintaining strong correlation with execution match results.\nB. GPT-based similarity scores achieve the highest F1 scores in thresholding experiments by effectively capturing semantic nuances and structural patterns in code.\nC. TSED provides a more interpretable and stable evaluation by leveraging AST edit distances, avoiding the black-box nature of LLM-based approaches.\nD. GPT similarity scores show consistent stability across multiple iterations, ensuring reliable and repeatable code similarity assessments.",
+    "correct_answer": "ABCD"
+  },
+  {
+    "paper_id": "65",
+    "question": "Which of the following statements about GPT-4's performance in simulating text-based world states are supported by the findings of the BYTESIZED 32-State-Prediction benchmark?\nA. GPT-4 achieves higher accuracy in modeling environment-driven transitions (Fenv) compared to action-driven transitions (Fact) due to its ability to infer implicit dynamics.\nB. Static transitions, where no changes occur to object properties or game progress, are predicted more accurately than dynamic transitions requiring state modifications.\nC. Providing human-written or LLM-generated rules in the context significantly improves simulation accuracy for both action-driven and environment-driven transitions.\nD. GPT-4 struggles most with transitions involving arithmetic, common-sense reasoning, or scientific knowledge, leading to incorrect or unaltered property values.",
+    "correct_answer": "ABCD"
+  },
+  {
+    "paper_id": "65",
+    "question": "Based on the experimental results in the paper, which of the following conclusions are valid regarding GPT-4’s performance as a text-based world simulator?\nA. GPT-4 achieves higher accuracy in predicting full game states compared to state difference predictions for dynamic transitions, as generating the entire state reduces format-related errors.\nB. Static transitions, where no changes occur to object properties, are simulated with significantly higher accuracy than dynamic transitions, even when explicit game rules are omitted.\nC. Providing LLM-generated rules as context yields comparable performance to human-authored rules, indicating that LLMs can autonomously generate reliable simulation guidelines.\nD. GPT-4’s ability to predict game progress metrics, such as reward and termination status, is largely unaffected by the presence or absence of contextual rules describing scoring conditions.",
+    "correct_answer": "ABC"
+  }
+]
+[
+  {
+    "paper_id": "66",
+    "question": "Which of the following strategies or components in AutoCodeRover contribute to its effectiveness in resolving GitHub issues by leveraging program structure and iterative analysis?",
+    "correct_answer": "ACD"
+  },
+  {
+    "paper_id": "66",
+    "question": "Which of the following experimental results or comparisons highlight AutoCodeRover’s advantages over baseline methods like Swe-agent and manual developer efforts?",
+    "correct_answer": "ABD"
+  },
+  {
+    "paper_id": "67",
+    "question": "What are the benefits and challenges of integrating external programming tools into the CODEAGENT framework for enhancing repo-level code generation, and how do agent strategies like ReAct and Rule-based Tool Usage facilitate this process?",
+    "correct_answer": "C"
+  },
+  {
+    "paper_id": "67",
+    "question": "Which of the following statements about agent strategies and performance evaluations of CODEAGENT are supported by experimental results in the paper?",
+    "correct_answer": "D"
+  },
+  {
+    "paper_id": "67",
+    "question": "Which of the following statements about AutoCodeRover's iterative code search and program analysis strategies are correct?",
+    "correct_answer": "CD"
+  },
+  {
+    "paper_id": "67",
+    "question": "Which of the following programming tools integrated into CODEAGENT are categorized under information retrieval and code testing, respectively?",
+    "correct_answer": "BCD"
+  },
+  {
+    "paper_id": "68",
+    "question": "Which statements are true regarding the challenges of optimizing DAGs in the context of language agent orchestration, as discussed in the paper \"GPTSwarm: Language Agents as Optimizable Graphs\"?",
+    "correct_answer": "D"
+  },
+  {
+    "paper_id": "68",
+    "question": "Which experimental results highlight the benefits of GPTSwarm’s automatic optimization strategies?",
+    "correct_answer": "ABCD"
+  },
+  {
+    "paper_id": "69",
+    "question": "What are some of the key features of the Cubic Schedule employed in AFLoRA's adaptive mechanism?",
+    "correct_answer": "C"
+  },
+  {
+    "paper_id": "69",
+    "question": "What are the primary benefits and implementation strategies of Adaptive Freezing in the AFLoRA method as discussed in the paper, and how does it compare to traditional LoRA and ELoRA methods in terms of performance metrics?",
+    "correct_answer": "BC"
+  },
+  {
+    "paper_id": "69",
+    "question": "Which of the following performance advantages of AFLoRA over LoRA and ELoRA are supported by the experimental results in the paper?",
+    "correct_answer": "ABD"
+  },
+  {
+    "paper_id": "69",
+    "question": "Which of the following statements about the structural components and adaptive freezing mechanism in AFLoRA are correct?",
+    "correct_answer": "ABCD"
+  }
+]
+[
+  {
+    "paper_id": "70",
+    "correct_answer": "A"
+  },
+  {
+    "paper_id": "70",
+    "correct_answer": "A B C"
+  },
+  {
+    "paper_id": "71",
+    "correct_answer": "B D"
+  },
+  {
+    "paper_id": "74",
+    "correct_answer": "B"
+  },
+  {
+    "paper_id": "76",
+    "correct_answer": "A C D"
+  },
+  {
+    "paper_id": "77",
+    "correct_answer": "A B"
+  },
+  {
+    "paper_id": "77",
+    "correct_answer": "B"
+  },
+  {
+    "paper_id": "78",
+    "correct_answer": "A B C D"
+  },
+  {
+    "paper_id": "78",
+    "correct_answer": "C"
+  },
+  {
+    "paper_id": "79",
+    "correct_answer": "A B D"
+  },
+  {
+    "paper_id": "79",
+    "correct_answer": "A B C"
+  },
+  {
+    "paper_id": "79",
+    "correct_answer": "B C D"
+  },
+  {
+    "paper_id": "79",
+    "correct_answer": "A C D"
+  }
+]
+[
+  {
+    "paper_id": "80",
+    "question": "Which factors were identified as influencing variations in LLM-generated acceptance rates for job applicants?",
+    "correct_answer": "ABD"
+  },
+  {
+    "paper_id": "80",
+    "question": "Which factors significantly influence the magnitude and direction of LLM-generated hiring biases according to the experimental results?",
+    "correct_answer": "ABC"
+  },
+  {
+    "paper_id": "80",
+    "question": "Which of the following statements about demographic disparities in LLM-generated hiring decisions are supported by the study's findings?",
+    "correct_answer": "AC"
+  },
+  {
+    "paper_id": "81",
+    "question": "Which of the following comparisons between SEM-based and gloss-based SLT systems are supported by the experimental results in the paper?",
+    "correct_answer": "ABC"
+  },
+  {
+    "paper_id": "81",
+    "question": "Which of the following statements about the SEM-based architectures and their training objectives are supported by the paper?",
+    "correct_answer": "AC"
+  },
+  {
+    "paper_id": "82",
+    "question": "Based on the intrinsic evaluation metrics, which of the following effects are observed when applying the 'least tokens' inference strategy across tokenizers?",
+    "correct_answer": "BC"
+  },
+  {
+    "paper_id": "82",
+    "question": "Which of the following statements about the performance of tokenizer inference methods in the benchmark evaluation are correct?",
+    "correct_answer": "AC"
+  },
+  {
+    "paper_id": "83",
+    "question": "Which of the following statements about German dialect speakers' attitudes toward hypothetical language technologies (LTs) are supported by the survey findings?",
+    "correct_answer": "ABD"
+  },
+  {
+    "paper_id": "84",
+    "question": "Which of the following statements about the capabilities of LLMs in humor editing and dataset creation, as discussed in the paper, are correct?",
+    "correct_answer": "BCD"
+  },
+  {
+    "paper_id": "85",
+    "question": "Which of the following statements accurately describe the adversarial training objectives and experimental outcomes of the proposed privacy neuron localization method?",
+    "correct_answer": "ABD"
+  },
+  {
+    "paper_id": "85",
+    "question": "Which of the following statements about the characteristics and findings of privacy neurons in LLMs are correct?",
+    "correct_answer": "ABCD"
+  },
+  {
+    "paper_id": "85",
+    "question": "Which of the following statements accurately describe the experimental outcomes and mitigation strategies for PII leakage proposed in the paper?",
+    "correct_answer": "ABD"
+  }
+]
+
+
+
+
+
+
+
+
+
+

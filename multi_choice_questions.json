@@ -1,0 +1,903 @@
+[
+    {
+        "paper_id": "0",
+        "question": "Which of the following factors may cause multilingual large language models to show English bias when processing non-English languages?\nA. The model's training data mainly consists of English text.\nB. The model uses English as the central language in the middle layer for semantic understanding and reasoning.\nC. In the model's word embedding space, English word embeddings are more densely distributed and easier to be \"captured\" by the model.\nD. The model translates non-English text into English before translating it into the target language.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "0",
+        "question": "Which of the following best describes the three-phase process observed in Llama-2 models when processing non-English prompts?\nA. Input tokens are first mapped to a language-agnostic space, then refined using syntactic rules, and finally aligned with output language embeddings.\nB. Latent embeddings start in input space, transition to a concept space biased toward English, and finally move into output language-specific regions.\nC. The model implicitly tranfroms input to English via middle-layer attention heads, processes it in English, and decodes translations in the final layer.\nD. Early layers prioritize grammatical structure, middle layers focus on cross-lingual token alignment, and late layers optimize for fluency in the target language.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "0",
+        "question": "Which of the following statements are supported by the study?\nA. Intermediate layers of Llama-2 exhibit higher probabilities for English tokens than the input language, even when prompted in non-English.\nB. The model’s \"concept space\" is entirely language-agnostic and shows no bias toward English.\nC. Token energy (proximity to output embeddings) sharply increases in the final layers, aligning with language-specific predictions.\nD. Early-layer embeddings are highly aligned with output token distributions, resulting in low entropy.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "1",
+        "question": "Which of the following statements about LLMs understanding different input formats of KGs are correct?\nA. LLMs with larger parameters are more robust to noisy or incomplete knowledge graphs when the input is linearized triples.\nB. Large language models are better able to capture answer-related information when processing linearized triples.\nC. Converting knowledge graphs to natural language text can reduce semantic gaps and improve the performance of LLMs.\nD. Different large language models have different preferences for different ways of organizing triples.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "1",
+        "question": "Which of the following statements are correct about how LLMs use KG information for question answering?\nA. Linearized triplets are less likely to introduce noise than natural language text when used as input to LLMs, and are more conducive to the model extracting key information.\nB. When dealing with multi-hop questions, knowledge provided in the form of natural language text may introduce irrelevant information and affect the performance of LLMs because it needs to reason between sentences or paragraphs.\nC. Different LLMs show consistent preferences when dealing with sorted linearized triplets, which suggests that there is a universal optimal sorting strategy.\nD. For linearized triplets, the attention mechanism of LLMs tends to focus more on the parts related to the answer, which helps the model extract the answer.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "1",
+        "question": "According to the research in the paper, which of the following conclusions about the combination of large language models (LLMs) and knowledge graphs (KGs) are correct? (Multiple choice)\nA. Linearized triples (such as (head entity, relation, tail entity)) are more effective than natural language text in fact-intensive questions.\nB. LLMs with larger parameters (such as GPT-4) are less robust to noisy or missing triples.\nC. Natural language text (such as manually written documents) can significantly improve the performance of LLMs in domain-specific knowledge graphs (such as biomedicine).\nD. LLMs are more sensitive to irrelevant information in natural language text when answering multi-hop questions.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "2",
+        "question": "According to the paper, what are some primary advantages of using Dual Masked KL-divergence in SIU?\nA. It allows the model to reduce the probability of targeted concept tokens without corrupting unrelated distributions.\nB. It compresses the model size during unlearning, leading to a faster inference speed.\nC. It applies both token-level masking and vocabulary-level masking to manage the trade-off between forgetting and preserving.\nD. It enforces the model to exactly copy the output probabilities from the original model for all tokens.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "2",
+        "question": "What are the main evaluation criteria proposed by the authors in MMUBench for assessing unlearning methods in Multimodal LLMs?\nA. Efficacy, which checks whether the model forgets the targeted concept in known images.\nB. Efficacy, which checks whether the model forgets the targeted concept in known images.\nC. Fluency, which verifies if the overall language quality remains coherent post-unlearning.\nD. Carbon footprint, which tracks the environmental cost of the unlearning steps.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "2",
+        "question": "Based on the experiments comparing SIU to baseline approaches such as Gradient Ascent and GA+KL, which statements are accurate?\nA. GA typically leads to extreme responses like repeated tokens or whitespace.\nB. SIU consistently preserves model utility and diversity better than GA or GA+KL.\nC. GA+KL completely eliminates any possibility of recalling the targeted concept in unseen scenarios.\nD. Both GA and GA+KL fail to maintain coherent outputs when unlearning multiple concepts simultaneously.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "3",
+        "question": "Which of the following statements accurately describe the three tasks introduced in the MIKE benchmark—Vanilla Name Answering , Entity-Level Caption , and Complex-Scenario Recognition ?\nA. VNA specifically tests a model’s ability to return a concise and correct entity name when given a new, unseen image of the target entity.\nB. ELC is primarily focused on confirming whether a specific entity appears in a crowded scene of multiple objects, with minimal emphasis on generating a descriptive caption.\nC. CSR requires the model not only to detect whether the target entity is present among several entities but also to produce a fine-grained caption mentioning all detected entities.\nD. ELC demands the model to generate a descriptive sentence that explicitly identifies the fine-grained entity by name, rather than just describing its appearance or attributes.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "3",
+        "question": "From the experiments conducted on BLIP-2 and MiniGPT-4, which of the following observations are supported by the paper?\nA. Model size is not the sole determinant of better editing performance.\nB. Entity-Level Captioning tends to be more challenging than simple name identification.\nC. Once edited, MLLMs never degrade on out-of-scope examples.\nD. Editing the LLM layers generally outperforms editing only the visual encoder for FG knowledge.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "3",
+        "question": "What are potential advantages of applying Multi-Step Editing (as described in MIKE) when refining the model’s knowledge of fine-grained entities?\nA. It may allow the model to better capture diverse visual attributes of the target entity.\nB. It dramatically reduces the total training time compared to single-step editing.\nC. It tends to improve Reliability and Image Generality with only a slight trade-off in Locality.\nD. It is primarily designed to remove unrelated knowledge from the model’s memory.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "5",
+        "question": "Which evaluation metrics are used to measure KoPA's performance?\nA. MRR\nB. Precision\nC. Hits@10\nD. Recall",
+        "correct_answer": ""    },
+
+    {
+        "paper_id": "5",
+        "question": "To improve the performance of LLMs in KG completion tasks, which of the following strategies are highlighted in the paper to enhance the model’s ability to handle structured knowledge?\nA. Direct fine-tuning of LLMs on KG data, which improves the model's capacity to understand the relationships and entities present in the graph.\nB. Leveraging external knowledge sources, such as knowledge graphs, to complement the LLM's training data and help the model generate more contextually appropriate and accurate completions.\nC. The integration of entity linking and relational reasoning mechanisms into LLMs, allowing them to better infer missing relationships in KGs by utilizing structured knowledge from the graph.\nD. Utilizing the encoder-decoder architecture of the LLM to directly predict missing links in the KG, relying solely on the model's internal language understanding without external data input.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "5",
+        "question": "In the paper 'Making Large Language Models Perform Better in Knowledge Graph Completion,' which of the following approaches are proposed to enhance the ability of large language models (LLMs) to complete missing links in knowledge graphs?\nA. Fine-tuning the LLM on domain-specific corpora to incorporate domain knowledge that might not be represented in the original pretraining data.\nB. Applying transfer learning from existing large-scale knowledge graph completion models to improve LLM performance in structured knowledge tasks.\nC. Employing an augmented training approach that incorporates both the textual descriptions and structural information of the knowledge graph to help the LLM learn complex relationships.\nD. Using a specialized attention mechanism that focuses on relevant entities and relations in the knowledge graph during the inference process.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "5",
+        "question": "In the paper 'Making Large Language Models Perform Better in Knowledge Graph Completion,' which of the following are identified as novel contributions in extending existing LLM paradigms for knowledge graph completion ?\nA. The paper introduces the first extensive investigation of LLM-based KGC methods, incorporating KG structural information to enhance LLMs' reasoning abilities.\nB. It focuses on adapting existing paradigms such as ICL and IT for KGC by utilizing additional textual prompts to make LLMs structure-aware.\nC. The paper emphasizes using solely the LLM’s internal knowledge to complete knowledge graph tasks, without the need for external information or prompts.\nD. It proposes a method to augment LLMs' reasoning abilities by incorporating both textual and structural knowledge from KGs through additional layers of pre-trained embeddings.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "5",
+        "question": "In the paper 'Making Large Language Models Perform Better in Knowledge Graph Completion,' which of the following findings are highlighted in the main experiment for the triple classification task, as shown in Table 3 and Figure 3?\nA. KoPA achieves significant improvements in accuracy and F1-score compared to all 16 baseline models, with an improvement of 1.81% in accuracy and 1.85% in F1 on the CoDeX-S dataset.\nB. The performance of LLMs in the triple classification task is significantly improved by incorporating KG structural information during fine-tuning, with zero-shot LLMs performing very poorly in comparison.\nC. Despite the use of additional textual prompts in the structure-aware IT method, its performance still lags behind KoPA, which suggests that structural embeddings provide more semantic-rich information.\nD. In the inductive setting experiments with varying inductive rates , KoPA shows less performance degradation and better transferability, particularly for unseen entities, compared to structure-aware IT and vanilla I\nT. ",
+        "correct_answer": ""    },
+    {
+        "paper_id": "6",
+        "question": "Which techniques are key components of the Kg-GPT framework for enhancing reasoning over knowledge graphs?\nA. Structured prompting\nB. Adaptive retrieval mechanisms\nC. Graph-based data augmentation\nD. Incorporation of graph structure embeddings into LLM inputs",
+        "correct_answer": ""    },
+    {
+        "paper_id": "7",
+        "question": "Which of the following challenges does the SIU method address?\nA. Limited training data availability\nB. Model degradation due to meaningless outputs\nC. High computational cost of retraining from scratch\nD. Memory limitations of large-scale pretraining",
+        "correct_answer": ""    },
+    {
+        "paper_id": "8",
+        "question": "Under the Retrieval-Augmented Generation framework, which methods perform the best?\nA. Markdown\nB. Template\nC. TPLM-based\nD. LLM-based",
+        "correct_answer": ""    },
+    {
+        "paper_id": "8",
+        "question": "Under the DSFT or RAG frameworks, which combinations of Table-to-Text methods and models scored over 4 in human evaluations?\nA. Markdown+Llama2-7B+RAG\nB. Template+Llama2-70B+DSFT\nC. TPLM-based+Llama2-7B+DSFT\nD. LLM-based+Llama2-70B+RAG",
+        "correct_answer": ""    },
+    {
+        "paper_id": "9",
+        "question": "According to the paper, which factors influence whether retrieval augmentation improves language model performance?\nA. Popularity of the entity-relation pairs\nB. The size of the language model\nC. The presence of multi-hop reasoning in the query\nD. The effectiveness of the retriever in retrieving relevant information",
+        "correct_answer": ""    },
+    {
+        "paper_id": "10",
+        "question": "Which techniques are introduced in the paper to enhance KG-to-text generation?\nA. Planning scorer for selecting the best linearized sequence\nB. Graph neural networks for encoding knowledge graphs\nC. Contrastive learning for distinguishing similar input KGs\nD. Relative distance encoding in graph structure-aware attention",
+        "correct_answer": ""    },
+    {
+        "paper_id": "11",
+        "question": "To which tasks is the framework of this paper applicable?\nA. Cell Type Classification\nB. Table Type Classification\nC. Table QA\nD. Table2Text",
+        "correct_answer": ""    },
+    {
+        "paper_id": "11",
+        "question": "To which tasks is the framework of this paper inapplicable?\nA. Cell Type Classification\nB. Table Type Classification\nC. Table QA\nD. Table2Text",
+        "correct_answer": ""    },
+    {
+        "paper_id": "12",
+        "question": "Which datasets contain hierarchical tables?\nA. IM-TQA\nB. WTQ (Raw)\nC. WTQ (Flatten)\nD. HiTab",
+        "correct_answer": ""    },
+    {
+        "paper_id": "13",
+        "question": "Based on the experimental results of the MATEval framework (Tables 1, 2, 3), which strategy combinations show the largest improvement in Spearman correlation coefficient (ρ) compared to the second-best strategy (Δρ≥0.1)?\nA. SR+CoT on 'Repetition ' and 'Inappropriate Lexical Choice ' in the Ant dataset\nB. SR+CoT on 'Logical Inconsistency ' in the ROC dataset and 'Logical Inconsistency ' in the LOT dataset\nC. SR+CoT on 'Discontinuity ' and 'Repetition ' in the Ant dataset\nD. SR+CoT on 'Inappropriate Lexical Choice ' in the Ant dataset and 'Logical Inconsistency ' in the Ant dataset",
+        "correct_answer": ""    },
+    {
+        "paper_id": "13",
+        "question": "How does the MATEval framework’s design potentially influence the future development of AI systems beyond its role in text evaluation?\nA. Its multi-agent collaboration could inspire distributed AI systems for real-time problem-solving, drawing parallels to swarm intelligence approaches.\nB. Its use of self-reflection in LLMs might streamline meta-learning strategies, allowing models to generalize across tasks with minimal retraining.\nC. Its integration of multiple LLMs could pave the way for hybrid architectures blending neural networks with symbolic reasoning systems.\nD. Its emphasis on Chain-of-Thought reasoning could replace traditional fine-tuning methods, reducing the computational burden of generative AI training.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "13",
+        "question": "What ethical or practical challenges might arise from deploying the MATEval framework in real-world AI evaluation scenarios?\nA. Its multi-agent LLM system could increase computational resource demands, raising concerns about environmental sustainability in large-scale deployments.\nB. Its reliance on self-reflection might introduce subjective biases from LLMs, complicating efforts to ensure fair and consistent evaluations across diverse datasets.\nC. Its use of Chain-of-Thought reasoning could make evaluation outcomes harder to interpret, challenging transparency requirements in regulated industries.\nD. Its integration of multiple LLMs could reduce the risk of overfitting to specific text styles, ensuring robust performance in multilingual contexts.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "14",
+        "question": "Which of the following features does DEE have that traditional methods like ROUGE and BLEU do not?\nA. Provides a numerical score for text quality.\nB. Offers detailed error explanations.\nC. Flags stylistic inconsistencies in generated text.\nD. Reduces reliance on human-curated references",
+        "correct_answer": ""    },
+    {
+        "paper_id": "14",
+        "question": "Which of the following are true about DEE's efficiency?\nA. It has inference speed comparable to smaller language models.\nB. It is suitable for real-time applications.\nC. It is more efficient than traditional methods.\nD. It requires less computational resources than large language models.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "14",
+        "question": "Which of the following error types does DEE specifically address that traditional methods like ROUGE and BLEU do not?\nA. Grammatical errors\nB. Factual inaccuracies\nC. Bias in text\nD. Inappropriate Lexical Choice",
+        "correct_answer": ""    },
+    {
+        "paper_id": "15",
+        "question": "In Example 3, list the number of axioms that are contained in the resulting set of wanted inclusion assertions or the set of unwanted inclusion assertions (note that a complete revision state separates a TBox into a set of wanted inclusion assertions and a set of unwanted inclusion assertions)?\nA. 2\nB. 4\nC. 3\nD. 1",
+        "correct_answer": ""    },
+    {
+        "paper_id": "16",
+        "question": "What relations between concepts exisit in LOS?\nA. IsA\nB. Equal\nC. Relate\nD. owl:sameas",
+        "correct_answer": ""    },
+    {
+        "paper_id": "17",
+        "question": "When the input is only a screenshot, which baseline LLM or VLM is used as the backbone of the agent?\nA. GPT-4V\nB. Qwen-Max\nC. Claude-3-Opus\nD. Gemini-Pro-1.5",
+        "correct_answer": ""    },
+    {
+        "paper_id": "17",
+        "question": "What functions does OSWORLD provide as agent actions?\nA. moveTo\nB. keLeft\nC. Press\nD. dragTo",
+        "correct_answer": ""    },
+    {
+        "paper_id": "23",
+        "question": "According to the paper, which of the following are true about the StructLM model?\nA. It outperforms task-specific models on all evaluated datasets.\nB. It achieves state-of-the-art results on 7 out of 18 evaluated tasks.\nC. Scaling model size provides significant improvements in performance.\nD. It demonstrates strong zero-shot generalization capability on unseen structured knowledge grounding tasks.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "23",
+        "question": "What types of structured data are used in the training of StructLM?\nA. Images and videos.\nB. Tables.\nC. Knowledge graphs.\nD. Databases.\n",
+        "correct_answer": ""    },
+    {
+        "paper_id": "24",
+        "question": "Based on the experimental section of the article, which of the following parameters are hyper-parameters?\nA. The neuron attribution scores threshold\nB. The number of identified context-aware neurons\nC. The activation value\nD. The enhancement strength",
+        "correct_answer": ""    },
+    {
+        "paper_id": "25",
+        "question": "Based on the analysis in the paper, which of the following statements accurately reflect the implications of the selected model?\nA. The selected model necessitates dynamic Bayesian optimization frameworks to iteratively refine intervention strategies under nonstationary environmental parameters.\nB. The model asserts that policy efficacy is solely contingent upon proximal temporal windows, rendering distal outcome evaluations statistically redundant.\nC. Socio-technical feedback loops are prioritized in the model to ensure anthropological validity metrics for intervention sustainability.\nD. Long-term monitoring is deemed superfluous due to the model’s reliance on Markovian environmental states for bounded trajectory forecasting.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "25",
+        "question": "What are potential implications of the selected model in the context of the research findings?\nA. The model underscores homophilic clustering within sociocentric networks as a primary driver of individual behavior modulation.\nB. The model negates the impact of environmental covariates on psychometric trajectories when controlling for autoregressive parameters.\nC. The model identifies cognitive dissonance as a mediating latent variable in behavior modification, validated through neurocomputational simulations.\nD. The model posits that policy interventions leveraging decentralized participatory frameworks induce sustainable behavioral patterning through iterative feedback loops.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "26",
+        "question": "Which of following types of methods have been included in baseline methods?\nA. Memory-based: Stores and replays past samples, effective but memory-intensive.\nB. Prior-based: Constrains parameter updates to reduce forgetting but struggles without task boundaries.\nC. Dynamic architecture: Allocates separate parameters per task, mitigating forgetting but requiring task labels.\nD. Hybrid: Combines multiple strategies for better efficiency and performance.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "26",
+        "question": "According to the paper, which of the following are characteristics of regularization-based methods in continual learning?\nA. They utilize hyper gradients obtained via bi-level optimization.\nB. They aim to discern and retain important parameter weights associated with prior tasks.\nC. They assess the importance of weights through the second-order Hessian of previous tasks.\nD. Their Hessian estimations are updated online during subsequent training.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "26",
+        "question": "According to the theoretical analysis presented in the paper, the variance reduction achieved by VR-MCL is equivalent to:\nA. Decreasing the learning rate for the current task.\nB. Increasing the frequency of memory buffer sampling.\nC. Imposing a penalty on its online estimated Hessian.\nD. Better preserving crucial weights for previous tasks.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "27",
+        "question": "Which of the following datasets were used when evaluating function vector intervention?\nA. CommensenseQA\nB. HellaSwag\nC. SuperNI\nD. Alpaca\n",
+        "correct_answer": ""    },
+    {
+        "paper_id": "27",
+        "question": "Which of the following types of CL methods were NOT implemented with FV on Mistral?\nA. Memory-based methods\nB. Prior-based methods\nC. Meta-learning based methods\nD. Dynamic Architecture methods",
+        "correct_answer": ""    },
+    {
+        "paper_id": "27",
+        "question": "Which of the following statements accurately describe the phenomenon of CF in LLMs during continual instruction tuning?\nA. CF is primarily caused by the overwriting of previously learned task-processing functions within the model's parameters.\nB. CF is a significant challenge where models forget previously learned information upon learning new tasks.\nC. The extent of CF can vary depending on the specific language model being used.\nD. CF is effectively mitigated by simply increasing the size of the training dataset for new tasks.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "28",
+        "question": "Which of the following statement about the LLMs generating version-compatible code are correct?\nA. LLMs with larger parameters may perform worse than those with fewer parameters in generating code.\nB. The results demonstrate that the LLMs perform better in forward compatibility testing than in backward compatibility testing.\nC. Owing to giant variations in different versions of Python third-party libraries, context code in another version is less helpful even harmful to generate version compatible code.\nD. The metric of testing code migration tasks involves multiple parts of code; one is syntactic propriety.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "28",
+        "question": "Which of the following statements are correct about LLMs facing with dynamic nature of software development?\nA. With the development in artificial intelligence, LLMs display strong abilities to handle problems in software engineering.\nB. ICL is beneficial in reduce noise for LLMs to generating target version-compatible code.\nC. Owing to LLMs have been pre-trained on enormous data, the information of a library is insignificant to complete code generation.\nD. Using Knowledge graph as an external knowledge base is a potential approach in improving the performance of code generation tasks though it may bring more noise.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "28",
+        "question": "According to this paper, which statements below of the metric CDC are correct?\nA. One rule of this metric is whether the generated code contains the new API name.\nB. This metric extends from conventional similarity metrics such as CodeBLEU and CDC compares the semantic similarity between the generated code and referenced code.\nC. Among the five rules in CDC, one of them is same to the standard of Pass@1 in block-level completion.\nD. CDC is more reliable than other metric such as pass@1 and EM@1 because it has five rules",
+        "correct_answer": ""    },
+    {
+        "paper_id": "29",
+        "question": "Which of the following components are explicitly mentioned in CodeGRAG's methodology for bridging the syntactic gap between natural language and programming languages?\nA. Incorporation of adaptive inference mechanisms for contextual variable typing across multi-dimensional flow representations.\nB. Combination of two types of flow computational graphs with bidirectional signaling mechanisms.\nC. Employment of graph neural network with soft prompting expert models to encode execution pathways in order to extract the information from code blocks.\nD. Extraction of abstract syntax trees to construct structural representations.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "29",
+        "question": "Which of the statements below of the experiments results of CodeGRAG are correct?\nA. HumanEval-X was used to test multi-lingual code generation performance using metrics such as Pass@1 for Python and C++.\nB. The results displayed the CodeGRAG’s ability on cross-lingual code translation between low-resource programming languages like Python and C++.\nC. It reveals if the datasets enriched by including problems categorized by different difficulty levels from real word programming problems will be more challengable.\nD. The results reveal the effects of CodeGRAG within and without PEFT and soft-prompting using models Gemma-7B, Llama3-13B and CodeLlama-7\nB. ",
+        "correct_answer": ""    },
+    {
+        "paper_id": "29",
+        "question": "What metrics or criteria were used in the evaluation of CodeGRAG's performance, according to the experimental results?\nA. BLEU score for semantic similarity between generated and reference code.\nB. Pass@1 accuracy on the HumanEval-X and CodeForce datasets.\nC. Pass@1 accuracy for testing the effects of GNN expert model.\nD. Execution time optimization for cross-lingual compilation.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "30",
+        "question": "Attrributed triple is an ideal knowledge representation form because:\nA. Attributed triple is flexible and can be applied widely in many scenarios.\nB. Attributed triple can mitigate ambiguity in structured knowledge representation for its enhancement in binary relationships.\nC. Attributed triples can be obtained without human assistance with designed extraction model\nD. Attributed triples can be integrated into a graph database easily.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "30",
+        "question": "Why contrastive learning module is employed in the extraction model?\nA. To mitigate bad effects caused by the shortage of domain data.\nB. To improve the model performance on extracting entities and relations.\nC. To enhance the model's capability of representation.\nD. To accelerate the model training by learn subtle differences between samples.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "30",
+        "question": "The extraction model for attributed triples can be improved from:\nA. Accuracy. With a more complicated architecture, the model can provide better attributed triples.\nB. Recall. Lower the threshold in relation identification can boost more discovery of potential relations.\nC. Efficiency. Design a new module to decrease the number of permutation when searching for candidate combinations.\nD. Efficiency. Sample the candidate combinations generated to reduce expenditure on computation.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "18",
+        "question": "Why use the feedback of question-answering models for preference fine-tuning?\nA. In order to align the preferences of the knowledge rewriter with the question-answering model.\nB. In order to adapt the knowledge rewriter to question-answering models with different preferences.\nC. In order to train the knowledge rewriter more accurately.\nD. Commonly used text evaluation indicators are difficult to select the most beneficial knowledge representation for question-answering models.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "18",
+        "question": "Why use ChatGPT for data augmentation?\nA. ChatGPT has powerful natural language generation capabilities and can ensure the quality of data.\nB. It can improve the quality of preferred knowledge representation and the diversity of the training data.\nC. The quality of the original data is too poor to improve the performance of the model after training.\nD. In order to make the gap in the knowledge representation of preference pairs large enough to improve the effect of DPO training.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "18",
+        "question": "Why use Accuracy, Recall and EM as three evaluation metrics?\nA. Accuracy is one of the most commonly used evaluation metrics in generative KGQ\nA.\nB. These evaluation metrics are necessary in KGQA task.\nC. Recall and EM can comprehensively assess the performance of KGQ\nA.\nD. These three metrics are commonly used in KGQA tasks, and use large language models to objectively reflect the performance of KGQ\nA. ",
+        "correct_answer": ""    },
+    {
+        "paper_id": "19",
+        "question": "Which of the following best justifies the use of success rate and executability as evaluation metrics for task planning performance?\nA. Success rate serves as the most effective metric for assessing task planning performance, aligning directly with the primary objective of our study.\nB. Success rate and executability are widely used evaluation metrics in the field of task planning.\nC. The combination of success rate and executability provides a comprehensive and sufficient assessment of task planning performance.\nD. Success rate effectively measures whether a task can be successfully completed, while executability evaluates the feasibility of the task planning.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "19",
+        "question": "Can our method be applied to open-source large language models?\nA. Yes. Because closed-source large language models can be decomposed through in-context learning.\nB. No. Our method is only applicable to open-source large language models and is not applicable to closed-source large models.\nC. Yes. Closed-source large language models can be fine-tuned to improve task planning capabilities.\nD. Yes. Multi-level decomposition of tasks can significantly reduce the difficulty of task planning, which is also effective for large language models.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "19",
+        "question": "Why use environmental feedback to verify training data?\nA. Data that has been verified by the environment can be consistent with the characteristics of the environment.\nB. The training data generated by ChatGPT is not necessarily correct.\nC. Environmental verification can correct the error in the generated training data.\nD. Due to the lack of corresponding data set evaluation methods, environmental verification is a better way to verify the quality of the data set.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "20",
+        "question": "Which of the following statements about the training data of LISA model is correct?\nA. The training data for LISA only includes a semantic segmentation dataset.\nB. The training data for LISA includes semantic segmentation, reference segmentation, and visual question answering datasets.\nC. The training data of LISA does not contain any samples involving complex reasoning.\nD. The training data for LISA includes images from OpenImages and ScanNetv2",
+        "correct_answer": ""    },
+    {
+        "paper_id": "20",
+        "question": "Which of the following statements about the training strategy of LISA model is correct?\nA. LISA uses LoRA technology for efficient fine-tuning.\nB. LISA completely froze the visual backbone network during the training process.\nC. The training data of LISA includes instruction restatements generated from GPT-3.5.\nD. LISA did not use any visual question answering dataset during the training process.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "20",
+        "question": "Which of the following statements about the architecture design of LISA model is correct?\nA. LISA used a new <SEG> tag to represent the segmentation output.\nB. The decoder part of LISA is completely frozen and untrained.\nC. LISA's vision backbone can only use the SAM model.\nD. The text generation loss and segmentation mask loss of LISA are optimized separately.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "21",
+        "question": "According to the article, how does the ontology facilitate the retrieval of in-context examples?\nA. Ontology plays a crucial role in selecting effective in-context examples—examples that share a similar ontology are highly relevant and serve as strong demonstrations for in-context learning.\nB. Provide external knowledge guidance to enhance example extraction capabilities in low-relevance and low-resource environments\nC. Apply additional constraints to refine the selection of relationship examples, ensuring that extracted examples align with predefined ontological structures and enhance the overall accuracy of relationship extraction.\nD. Ontology provides a semantic hierarchy, enabling a deeper understanding of the underlying meaning of queries and facilitating more intelligent retrieval.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "21",
+        "question": "Which of the following statements about the Recall, Retrieve, and Reason framework in this paper are incorrect?\nA. In the recall phase, a large language model is used to generate entity pairs that share a consistent ontology (both entity types and relations) with the test example, serving as queries for the retrieval phase.\nB. In the retrieval phase, the proposed method utilizes the retrieved entity pairs to get the predicted relations via in-context learning and majority vote.\nC. In the recall phase, the distribution of entity pairs from the training data (i.e., ontological knowledge) is injected into the LLM by minimizing the KL divergence.\nD. In the reason phase, the proposed method predicts relationships using retrieved examples through in-context learning.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "21",
+        "question": "Which of the following statements about the experimental results in the article are correct?\nA. On the TACRED dataset, the micro-F1 score of the LLaMA-7B + RE4 framework significantly surpasses that of the GPT-3 model(175b), due to the schema constrain of proposed RE4 method.\nB. This work demonstrates that open-source LLMs (e.g., LLaM\nA. can outperform proprietary large models in complex tasks (e.g., RE) through framework optimization.\nC. The proposed method with LLaMA-7b achieves results comparable to, or even surpassing, those of ultra-large models such as GPT-3 across multiple datasets.\nD. The RE4 framework enhances parameter efficiency in mid-sized open-source models (<10\nB. far beyond traditional supervised models through ontology knowledge distillation and reasoning optimization.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "22",
+        "question": "Which of the following statements about KG-enhanced Chunk Retrieval are correct?\nA. In the semantic-based retrieval phase, proposed method uses an embedding model to compute the semantic similarity between the user query and all chunks, selecting the top-k chunks with the highest similarity as the retrieval results.\nB. In the graph-guided expansion phase, proposed method uses the retrieved chunks as seed chunks, expand through overlapping or connected entities in the KG to obtain an expanded subgraph.\nC. KG2RAG calculates the semantic similarity between expanded chunks and the user query, construct an undirected weighted graph, and filter redundant edges using maximum spanning tree .\nD. All documents are split into chunks based on sentence and paragraph structures, and associated with a specific knowledge graph to establish linkages between chunks and the KG.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "22",
+        "question": "Which of the following statements about KG-based Context Organization are incorrect?\nA. Proposed method computes the semantic similarity between the expanded chunks and the user query, build an undirected weighted graph, and eliminate redundant edges with the maximum spanning tree .\nB. In this section, the number of expanded chunks generated by graph-guided expansion depends on the triplets within the expanded subgraph. However, this number can become excessively large, which can be redundant and result in very little useful information.\nC. The goal of KG-based Context Organization is to retain the most relevant information in the retrieval results and organize the chunks into internally coherent paragraphs aligned with the KG skeleton\nD. In this section, KG serves as a skeleton that integrates the retrieved information chunks to ensure semantic consistency between information chunks.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "22",
+        "question": "Which of the following statements about the experiments in this paper are correct?\nA. KG²RAG achieves a favorable balance between retrieval precision and recall on the HotpotQA-Dist and Shuffle-HotpotQA-Dist settings. Specifically, in the distractor setting, KG²RAG improves precision by over 7.9%.\nB. KG²RAG outperforms baseline methods on both HotpotQA-Full and Shuffle-HotpotQA-Full settings. Notably, in the fullwiki setting, KG²RAG achieves at least an 8% improvement in F1 score.\nC. Using only KG-guided expansion significantly degrades retrieval quality, while using only the KG-based context organization module improves retrieval precision and generate better responses.\nD. Experiments were conducted on the HotpotQA dataset and its variants. To mitigate the reliance on prior and external knowledge, this paper also constructs variants of HotpotQA, namely Shuffle-HotpotQA-Dist and Shuffle-HotpotQA-Full.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "31",
+        "question": "To ensure that LLMs provide more reliable and contextually relevant responses during the inference stage, which mechanisms primarily anchor the LLM's generation process in external, up-to-date, or domain-specific knowledge, even if this external information is not part of the original training data and may be susceptible to adversarial attacks?\nA. Techniques such as prompt engineering and in-context learning guide the LLM's internal knowledge to produce desired outputs through carefully crafted input sequences, without necessarily retrieving external documents.\nB. The RAG framework employs separate knowledge bases and retrievers to acquire relevant external texts, which are then used as context for the LLM, thereby influencing its answer generation process.\nC. Fine-tuning a pre-trained LLM on a specific domain-related data corpus directly updates the model's internal parameters, embedding new knowledge and biases into its generative capabilities.\nD. Advanced RAG schemes, which incorporate mechanisms like self-reflection on retrieved contexts or query-based adaptive retrieval strategies, aim to enhance the quality and relevance of external information used to inform LLM responses.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "31",
+        "question": "Considering the potential risks associated with RAG systems, which rely on external knowledge bases to support LLMs in generating answers, which of the following mechanisms or actions can be regarded as contamination of the system's knowledge component, potentially undermining its intended functionality?\nA. Infiltrating the knowledge base with carefully crafted adversarial data points designed to be semantically similar to target queries in high-dimensional embedding space, thus enticing the retriever to extract malicious content to influence LLM generation.\nB. Directly tampering with the underlying data sources used to construct the knowledge base, such as unauthorized edits to public wiki pages or introducing false documents on indexed websites, representing an effective means of contaminating the system.\nC. Employing advanced prompt engineering techniques during the query phase to directly influence the output of the LLM, bypassing the retrieval mechanism, which can be considered a form of external user input contamination affecting system functionality.\nD. Unintentionally including outdated or factually inaccurate information during the initial construction or subsequent updates of the knowledge base, which can be viewed as a form of self-contamination, leading the RAG system to disseminate incorrect knowledge.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "31",
+        "question": "Considering the novel vulnerabilities introduced by RAG systems, how does the PoisonedRAG attack fundamentally exploit the expanded attack surface inherent in these architectures, which goes beyond the security considerations of standalone large language models?\nA. PoisonedRAG primarily targets the allocation of computational resources within the RAG process. By overwhelming the system, it forces reliance on cached, potentially outdated or malicious information, thereby bypassing real-time retrieval to achieve its attack objectives.\nB. By strategically injecting small amounts of carefully crafted malicious text directly into external knowledge bases, PoisonedRAG manipulates the contextual information provided to large language models. This highlights a critical vulnerability in building language models on external, potentially untrusted data sources.\nC. This attack exploits the inherent trust large language models place in the outputs of retriever components, revealing a crucial trust vulnerability. Regardless of the true origin or content of the retrieved knowledge, LLMs assume it to be accurate and unbiased.\nD. PoisonedRAG introduces specially designed adversarial queries to confuse the similarity computations of the retriever, ensuring that the LLM receives a set of entirely unrelated or misleading documents, thus preventing the generation of accurate or truthful responses to user queries.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "31",
+        "question": "Regarding knowledge poisoning attacks on RAG systems, the following statements are accurate:\nA. The core of this attack involves contaminating the external knowledge base that RAG systems rely on. By injecting carefully crafted malicious text, attackers can induce large language models to generate predetermined answers to specific questions, thereby achieving purposes such as misinformation or malicious propaganda.\nB. When executing such attacks, attackers may need varying degrees of understanding of the RAG system's retriever. In a white-box attack scenario, attackers can access the retriever's parameters and optimize queries, while in a black-box scenario, they can only rely on observing and inferring the system's input-output behavior.\nC. Although RAG technology aims to enhance large language models' ability to acquire up-to-date knowledge and reduce hallucinations, the introduction of external knowledge bases also presents a new security risk. Specialized defense mechanisms are needed to address potential threats to knowledge integrity, such as credibility assessments of retrieved documents or adversarial training to enhance model robustness. These defense methods are preliminarily evaluated in research but show limitations.\nD. To effectively execute a knowledge poisoning attack, malicious text typically needs to meet both retrieval and generation conditions. The former ensures that the malicious text can be recalled by the retriever for the target question, while the latter ensures that when the large language model uses this text as context, it is more likely to generate the attacker's desired false or misleading answers.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "32",
+        "question": "Which of the following best describes the goal of advanced RAG techniques concerning different types of information?\nA. To achieve a more accurate and reliable response by carefully harmonizing the LLM's pre-existing knowledge with relevant information retrieved from external sources, especially when retrieval is imperfect.\nB. To create a synergistic effect where the strengths of the LLM's inherent understanding of language and the specific details from external documents are harmonized to overcome individual limitations in knowledge domains. (This incorporates internal knowledge not explicitly stated in the paper but is a general principle behind RAG.\nC. To prioritize the LLM's internal knowledge over external sources and selectively incorporate only perfectly matching retrieved passages after a rigorous process of harmonization to avoid knowledge conflicts.\nD. To ensure that all information, both internal to the LLM and externally retrieved, undergoes a thorough harmonization process before response generation, even if the retrieved information is entirely irrelevant to the user's query.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "32",
+        "question": "Which approach most effectively mitigates the negative consequences of flawed information retrieval in RAG systems, as suggested by recent research?\nA. A primary approach involves exclusively refining the initial retrieval mechanism through techniques like advanced query expansion and document re-ranking to guarantee the relevance of the provided external knowledge.\nB. One compelling approach is the sophisticated integration of the language model's pre-existing internal knowledge with the retrieved external information, employing strategies to identify and resolve potential conflicts in a source-aware manner.\nC. A straightforward approach to enhance RAG system resilience focuses on increasing the sheer volume of retrieved documents, assuming that the probability of encountering correct information will proportionally rise with a larger context window.\nD. An alternative approach leverages a multi-stage process where the language model first generates potential answers based solely on its internal knowledge, and subsequently uses retrieved documents merely as a validation layer without actively integrating conflicting information.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "32",
+        "question": "The following statements accurately describe the challenges discussed in the provided text, the AstuteRAG framework, and related aspects concerning the mitigation of contextual authenticity limitations in RAG systems:\nA. Inherent imperfections in retrieval within retrieval-augmented generation are often attributed to the quality of the underlying data corpus and the reliability of the information retrieval mechanisms themselves. These issues can lead to the integration of irrelevant or even factually incorrect information, thereby reducing the fidelity of outputs from large language models.\nB. A key bottleneck in achieving reliable retrieval-augmented generation lies in the prevalence of knowledge conflicts. This occurs when the vast amount of information embedded in the parameters of large language models sometimes contradicts the information retrieved from external databases or the web, necessitating effective coordination strategies.\nC. The AstuteRAG framework offers an innovative solution by adaptively extracting key information from the internal knowledge base of large language models. It iteratively integrates internal and external information while maintaining awareness of each knowledge source, ultimately deciding on the final answer based on an assessment of information reliability and cross-source consistency.\nD. Although the effectiveness of a retrieval-augmented generation system is undoubtedly influenced by the retrieval of relevant initial documents using various search algorithms and indexing techniques, this study's primary focus regarding AstuteRAG is not on improving these upstream retrieval processes. Instead, it aims to enhance the post-retrieval phase to better manage the complexities arising from potentially flawed or conflicting retrieved information.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "32",
+        "question": "In advanced retrieval-augmented generation systems like Astute RAG, which of the following best describes the considerations for achieving optimal knowledge alignment?\nA. Ensuring that the initial retrieval process yields highly accurate and relevant documents to minimize noise and potential conflicts in the augmented context provided to the large language model, thereby increasing the likelihood of generating reliable answers.\nB. Strategically designing prompts to effectively guide the large language model in prioritizing reliable information, resolving potential knowledge conflicts between internal knowledge and external sources, and generating accurate responses, especially when retrieval results are imperfect.\nC. Primarily focusing on enhancing the quality and credibility of the external knowledge corpus by implementing rigorous data cleaning and validation procedures before indexing for retrieval, thereby reducing the introduction of misinformation at the source.\nD. Dynamically adjusting the hyperparameters of the large language model during the generation phase to encourage greater coherence with the retrieved context, regardless of the authenticity of the retrieved information, in the hope that the model can better utilize external information.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "33",
+        "question": "According to the article, why the piror methods fail to include the knowledge graph into the LLM prompt?\nA. Knowlede graph schema is long and complecated, which exceeds the LLMs' context window length.\nB. When dealing with a new domain or unknown data, there is no fixed, pre-defined schema available.\nC. Knowledge Graph schemas often include fine-grained, structured, and explicit definitions of entity relationships, so LLMs is hard toconstructs a schema automatically and applies selfcanonicalization.\nD. Reasoning in LLMs is mostly implicit and prone to hallucinations, lacking logical rigor.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "33",
+        "question": "According to the paper, which of the following statement about the\nOpen Information Extraction phase of EDC is wrong?\nA. In this phase, a few demonstration is added to the OIE prompt for Chain-of Thought reasoning, which helps the open information extraction\nB. This phase takes text as input and outputs relational triplets([Subject, Relation, Object])\nC. This paper argues that with more semantic relavant in-context example, the extraction results are better.\nD. The output triplets form an open-KG, which is in a canonical form such that the resulting KGs will have minimal ambiguity and redundancy.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "33",
+        "question": "According to the paper, which of the following statement about the Schema Definition phase of EDC is wrong?\nA. In this phase, the defination of each triplet is generated, for the disambiguation of next stage.\nB. The original text is prompted to the LLMs for more accurate defination of the relation.\nC. The definations of relations function as a component of open-KG, which can provide more semantic information.\nD. In-context examples are also provided in the prompt of this phase, aims for more accurate generation.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "33",
+        "question": "According to the paper, which of the following statement about the\nSchema Canonicalization phase of EDC is wrong?\nA. The third phase focuses on transforming the open knowledge graph into a standardized format, reducing redundancy and resolving ambiguities.\nB. If the schema is pre-defined, this phase skips the self canonicalization stage.\nC. On the basis of vectorizing relationship definitions, Self Canonicalization   employs a clustering-like approach to select representative relationshipsas the schema.\nD. In the target alignment phase, LLMs evaluate the practicality of each candidate transformation to avoid over-generalization and hallucination",
+        "correct_answer": ""    },
+    {
+        "paper_id": "34",
+        "question": "Based on the paper, why do multiple textual question-answer examples in standard in-context learning perform poorly on complex knowledge base question-answering tasks?\nA. The logical form of answer requires a correct format, which is unfamiliar to the LLMs.\nB. Text prompt is hard for text-based LLMs to generate formated output.\nC. Without performing the tedious steps of semantic construction, the generated logical form often fails to yield the final answer to the question.\nD. In zero-shot generalization scenarios, the training set lacks prior knowledge about the KB domain schema relevant to the test questions. Therefore, examples derived from the training set are insufficient for effectively answering questions in these cases.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "34",
+        "question": "According to this paper, which of following statement about code-style in-context learning is correct?\nA. The instruction part is consist of prompt comment and python code implementation of several meta-functions.\nB. S-Expression is used to express the function call sequence of in-context demo example.\nC. The demonstration examples utilize entity identifiers along with their surface names to capture semantic information.\nD. The in-context examples guide the generationB of appropriate function call sequences for reasoning about new queries.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "34",
+        "question": "According to the paper, which of the following statements about KB reasoning phase is correct?\nA. Its hard for LLMs to genrate accurate entities and relations due to its inablity to directly process KB structured infomation.\nB. The semantic similarity and meta-function domain defination makes sure both entity mentions and relation mentions can be parsed easily.\nC. For the entity linking step, the paper first uses the pre-trained embedding model SimCSE to generate vector representations for all entity surface names in the knowledge base.\nD. During linking, the method initially employs a similay matching strategy, selecting all entities whose surface names exactly match the mention as candidates.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "34",
+        "question": "Which of the following statements is correct about the experimet part of this paper?\nA. Since the Codex model family has been deprecated, this paper choose OpenAI's GPT-3.5-turbo model for our experiments.\nB. In the ablation study section, theis paper investigates the necessity of related relations, instructions and demonstration examples.\nC. Experiments shows that, by converting logical form generation into code generation, the method leverages the LLM's familiarity with code, improving format accuracy.\nD. This paper employs the Format Error Rate to assess the percentage of semantic form generated by different methods that adhere to the grammar of S-Expression.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "35",
+        "question": "According to the paper, what are key motivations for proposing the Mixture of LoRA Experts ?\nA. Existing linear arithmetic methods degrade generative performance when composing multiple LoRAs.\nB. Current reference tuning-based methods have poor adaptability and high computational costs.\nC. Traditional LoRA fine-tuning methods significantly enlarge the model size.\nD. Individual LoRA layers encode unique traits, necessitating a hierarchical composition strategy.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "35",
+        "question": "How does MOLE specifically address the challenge of effectively composing multiple trained LoRAs?\nA. It employs a layer-wise gating function to dynamically allocate weights among LoRA experts.\nB. It retrains the entire pretrained model to better integrate characteristics from individual LoRAs.\nC. It introduces hierarchical weight control, allowing fine-grained modulation of LoRA features.\nD. It normalizes weights equally among all layers to preserve original model characteristics.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "35",
+        "question": "Which criteria were primarily used by the authors to evaluate the MOLE method in vision-and-language (V&\nL. tasks?\nA. Computational efficiency measured by GPU memory usage.\nB. Image-alignment, assessing the visual similarity between generated and intended visual concepts.\nC. Text-alignment, evaluating the semantic consistency between generated images and provided text prompts.\nD. Training convergence speed, comparing the number of epochs needed for composition.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "35",
+        "question": "What advantages does the gating balancing loss (L_balance) provide when training the MOLE method?\nA. It promotes balanced usage of all LoRA experts, preventing dominance by a single LoR\nA.\nB. It ensures faster inference by reducing the gating function complexity.\nC. It mitigates entropy collapse in the gating distribution, maintaining diverse feature contributions.\nD. It stabilizes training by directly penalizing large deviations from the pretrained model parameters.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "36",
+        "question": "According to the motivations presented in the paper, what key limitations do existing attention-based visual token pruning methods encounter?\nA. They tend to retain redundant tokens due to token similarity and clustering.\nB. They primarily focus on text tokens, neglecting important visual details.\nC. They exhibit positional bias, causing essential tokens to be ignored.\nD. They rely on training-based pruning methods, increasing inference complexity.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "36",
+        "question": "How does the AdaptPrune method enhance token pruning performance for vision-language models?\nA. By incorporating attention scores along with spatial positions and token similarity.\nB. By retraining the entire visual encoder to optimize token representation.\nC. By reframing the token pruning task as an adaptive Non-Maximum Suppression problem.\nD. By pruning all low-attention tokens across multiple layers simultaneously.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "36",
+        "question": "What were the primary findings from experiments conducted across various LVLMs using AdaptPrune?\nA. AdaptPrune effectively maintains model accuracy at high pruning ratios compared to existing methods.\nB. AdaptPrune significantly increases GPU memory usage during inference.\nC. The approach consistently retains diverse semantic regions of images rather than clustered redundant tokens.\nD. Token pruning at high ratios universally reduces model performance to impractical levels.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "36",
+        "question": "Based on the ablation studies, what roles do spatial distance and token similarity play in the AdaptPrune method?\nA. Spatial distance ensures tokens from diverse image regions are selected, reducing redundancy.\nB. Token similarity prevents highly similar neighboring tokens from dominating the retained set.\nC. Spatial distance helps AdaptPrune accelerate the training phase of LVLMs.\nD. Token similarity is used to precisely mimic the attention distribution of the original model.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "37",
+        "question": "Which of the following describes a key advantage of using In-Context Vectors over traditional In-Context Learning ?\nA. ICV requires fine-tuning of the model parameters.\nB. ICV enables more effective control over task adaptation without needing demonstration examples.\nC. ICV reduces the length of prompts by eliminating the need for demonstration examples.\nD. ICV works by modifying the self-attention mechanism within the Transformer model.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "37",
+        "question": "How does ICV (In-Context Vectors) enhance the latent states of a model during inference?\nA. By replacing the latent states at the first layer of the transformer.\nB. By adding the ICV to the latent states across all layers and token positions.\nC. By incorporating external training data into the latent states.\nD. By using a scaling factor to control the magnitude of latent state shifts.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "37",
+        "question": "Which of the following task types did ICV demonstrate improved performance on compared to ICL and LoRA fine-tuning?\nA. Role-playing with LLMs.\nB. Language detoxification, including toxicity reduction in responses.\nC. Classification tasks on labeled datasets.\nD. Style transfer, including tone shifts in written text.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "37",
+        "question": "In the context of safety improvements, how does ICV perform relative to traditional methods for detoxification and safety mitigation?\nA. ICV has been shown to outperform ICL and LoRA fine-tuning in safety-related tasks such as reducing toxicity.\nB. ICV only works effectively when paired examples are available for detoxification tasks.\nC. ICV reduces toxicity at the cost of semantic fidelity, leading to less accurate paraphrasing.\nD. ICV fails to significantly affect the model’s ability to detoxify content without adding new training data.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "38",
+        "question": "What distinguishes the Semantics-Adaptive Dynamic Intervention from traditional activation intervention methods?\nA. SADI uses fixed steering vectors to modify activations based on input semantics.\nB. SADI adapts dynamically to varied input semantics without additional training.\nC. SADI requires retraining the model for every new input.\nD. Traditional methods dynamically adjust model behavior by targeting only attention heads.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "38",
+        "question": "In which scenarios does SADI demonstrate its highest performance improvements compared to other activation engineering methods?\nA. In tasks with large amounts of training data, such as StoryCloze.\nB. In tasks with scarce training data, such as MML\nU.\nC. When fixed steering vectors are used across all tasks.\nD. When fewer contrastive pairs are used to generate steering vectors.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "38",
+        "question": "How does SADI compare to traditional fine-tuning methods (like SF\nT. in terms of data requirements?\nA. SADI requires extensive fine-tuning on large datasets to be effective.\nB. SADI can achieve optimal performance with a small number of contrastive pairs (e.g., 150).\nC. SADI is less effective than fine-tuning when training data is available.\nD. Fine-tuning methods outperform SADI in both zero-shot and few-shot settings.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "38",
+        "question": "What is the expected outcome of applying SADI to different layers or components of a model (e.g., attention heads, neurons)?\nA. It reduces the effectiveness of the model by overfitting to specific tasks.\nB. SADI’s adaptability ensures that interventions lead to improvements across a wide variety of tasks.\nC. SADI significantly degrades performance when applied to neurons in feed-forward networks.\nD. Different configurations of SADI (such as targeting attention heads or neurons) show varying levels of performance across tasks.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "39",
+        "question": "According to this paper, which statements below explain the capability of the RoG framework?\nA. RoG retrieves relevant reasoning paths from the KG， which is created by the author containing question entities in these two datasets.\nB. Reasoning on a faithful KGs could migate the hallucination problem of LLMs which enhance the quality of the response.\nC. RoG extracts not only the knowledge contained within knowledge graphs, but also captures the structural information of the graph.\nD. RoG is a specialized framework for GPTs, it cannot be utilized with DeepSeek-R1 when implementing long chain of thought.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "39",
+        "question": "Which of the following statements describe the motivation of RoG?\nA. Similar to the aim of continue learning for LLMs, RoG aims to migate hallicinations during reasoning process.\nB. Semantic parsing of LLMs generate more accurate and interpretable results by leveraging reasoning on KGs, but it performs worse than RoG according to the experiments.\nC. RoG empowers the trustworthy and explainibility of the reasoning process of LLMs by providing KG as a faithful knowledge base.\nD. To evaluate the performance of the plan and solve paradigm, the authors curate a framework called RoG to apply this paradigm.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "39",
+        "question": "Which optimization objectives are explicitly combined in RoG’s training framework?\nA. Minimizing the KL-divergence between faithful paths retrieved from KG and full paths generated by LL\nM.\nB. Maximizing the probability of generating valid relation paths, which means minimizing the divergence between faithful relation paths and relation paths generated by LLMs.\nC. Using GNN as an expert network to generate faithful relation paths.\nD. Enhancing the trustworthiness of the answer predicted by LLMs based on multiple reasoning paths retrieved from KG.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "39",
+        "question": "Which statements below accurately describe the effectiveness of RoG framework?\nA. RoG with higher recall than ChatGPT+CoT on CWQ despite ChatGPT’s larger parameter count.\nB. Removing the reasoning module improves recall but drastically reduces precision.\nC. Using random plans degrades performance more than omitting the planning module.\nD. RoG achieves higher Hits@1 than embedding-based methods on WebQS\nP. ",
+        "correct_answer": ""    },
+    {
+        "paper_id": "40",
+        "question": "According to CodeRAG-Bench evaluations, which of the following observations about retrieval-augmented code generation are true and contradict common assumptions in text-based RAG systems?\nA. Proprietary embedding models like OpenAI-03 universally outperform code-specific retrievers on repository-level tasks.\nB. Larger dense retrieval models consistently achieve higher NDCG@10 scores but require impractical computational resources.\nC. Providing mixed documents from multiple sources can match canonical document performance on basic programming tasks.\nD. GPT-4o shows no improvement with retrieved contexts for common libraries on open domain scenarios.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "40",
+        "question": "Which external knowledge gaps does CodeRAG-Bench expose about RACG systems?\nA. Code-specific LMs (e.g., Qwen-Coder-7\nB. universally outperform general-purpose LLMs in repository-level tasks.\nB. Retrieval from GitHub repositories is less useful than StackOverflow for open-domain coding.\nC. Models like Claude-3-sonnet fail repository-level tasks due to instruction-tuning biases.\nD. The stronger models not always benefit more from the canonical sources than its weaker counter-part.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "40",
+        "question": "Which statements below are true about the CodeRAG-bench framework?\nA. For enhancing diversity, the authors select multiple dense retrievers such as BGE-base to complete the experiments.\nB. While larger retrieval models often outperform smaller ones, so practically, we need to use larger retrieval models for better performance.\nC. The results show that adding canonical documents not always outperforms those without any context owing to the model's inner-parameter knowledge.\nD. RACG is particularly challenging for models that are already familiar with the libraries used in the task, such as GPT-4, so RACG performs better using stronger models than weaker models.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "40",
+        "question": "According to the paper, which of the following statements about the performance of retrieval-augmented code generation are true?\nA. RACG consistently improves the performance of GPT-4o and Claude-3-sonnet across all retrieval sources on HumanEval datasets.\nB. Weaker models like Claude-3-haiku and Gemini-1.5-flash benefit from RACG when multiple retrieval sources or single canonical source are aggregated , but not from other single sources.\nC. RACG with open retrieval significantly improves the performance of StarCoder2, especially when retrieving from StackOverflow posts.\nD. The performance of RACG is always better when using larger retrieval models, regardless of the task or dataset.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "41",
+        "question": "What is the main purpose of the instruction tuning phase in KnowCoder?\nA. Improving the model's reasoning capabilities\nB. Fine-tuning model weights to follow schema definitions\nC. Training the model to generate Python code from natural language\nD. Compressing model size for deployment efficiency",
+        "correct_answer": ""    },
+    {
+        "paper_id": "41",
+        "question": "Which of the following are limitations of existing UIE schema representation methods, as stated in the paper?\nA. Ignoring key information\nB. Difficulty in understanding and following for LLMs\nC. Lack of a unified schema representation method and an effective learning framework\nD. Lack of generalization",
+        "correct_answer": ""    },
+    {
+        "paper_id": "41",
+        "question": "Which statements about schema-instance code in KnowCoder are true?\nA. It includes entity, relation, or event instantiations in code format\nB. The aim of negative sampling is to let KnowCoder better distinguish correct sample and wrong sample\nC. It helps the model learn how specific instances map to schema\nD. After schema understanding and following, KnowCoder can be further improved by instruction tuning",
+        "correct_answer": ""    },
+    {
+        "paper_id": "41",
+        "question": "Why use code to represent schema?\nA. Large language models can easily understand code\nB. Large language models are pre-trained on vast amounts of programming code\nC. Code data is easier to collect\nD. Large language models are better at code generation tasks",
+        "correct_answer": ""    },
+    {
+        "paper_id": "44",
+        "question": "Which of the following are goals of EFSUM in fact summarization for QA tasks?\nA. Increase evidence density in the contextual knowledge\nB. Improve clarity by emphasizing relevant facts\nC. Avoid hallucinations in LLM-generated summaries\nD. Generate longer summaries for better coverage",
+        "correct_answer": ""    },
+    {
+        "paper_id": "44",
+        "question": "What are key components of the EFSUMdistill training process?\nA. Knowledge distillation from GPT-3.5\nB. Supervised fine-tuning\nC. Direct Preference Optimization\nD. Extract more beneficial summary",
+        "correct_answer": ""    },
+    {
+        "paper_id": "44",
+        "question": "Which challenges are associated with linear verbalization of KG facts?\nA. Reduced evidence clarity due to lack of focus\nB. Decreased computational efficiency\nC. Redundant tokens from repeated entities or relations\nD. Lack of semantic alignment with questions",
+        "correct_answer": ""    },
+    {
+        "paper_id": "44",
+        "question": "In what ways does the EFSUM approach differ from previous KG-to-text systems?\nA. EFSUM generates summaries tailored to the question context\nB. KG-to-text systems are trained on WebNLG-style sentence realization\nC. EFSUM uses explicit logical rules for relation rewriting\nD. EFSUM includes hallucination-aware filtering in training",
+        "correct_answer": ""    },
+    {
+        "paper_id": "45",
+        "question": "Which are right about the evaluation model mentioned in the paper:\nA. Adopted the relative position encoding method of Transformer.\nB. Used BERT for English and RoBERTa for Chinese as encoder.\nC. Used a single self-attention layer to compute the 2-dim attention matrix as the output of the decoder.\nD. Lower the computational cost compared to Transformer-based encoder.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "45",
+        "question": "Why evaluation model is introduced in this paper?\nA. To filter triples wrongly extracted with LLMs.\nB. To improve the recall of extraction model.\nC. To be an important novelty of this paper.\nD. To discover valid entity pairs more efficiently.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "45",
+        "question": "To improve the performance of the proposed model, we can:\nA. Use a better PEFT method like QLoRA instead of LoR\nA.\nB. Provide more data of high quality to train the evaluation model.\nC. Employ LLMs which perform better on information extraction.\nD. Design an evaluation model with more complex architecture.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "45",
+        "question": "Compared with extraction by LLMs, what’s the advantage of the model proposed:\nA. The recall of this model is higher for the existence of evaluation model.\nB. Wrong extraction can be cut with candidate pair evaluation.\nC. The model can be employed with other advanced LLMs.\nD. The model is easier for training with limited computational resources.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "46",
+        "question": "To build KG for Computer Science, I should follow steps mentioned in the paper:\nA. Use domain corpus collected by a domain expert Professor Colin Masters at the University of Melbourne.\nB. Use PTC to extract relevant entities.\nC. Use LLM to extract relationships.\nD. Use LLM to extract relational triples.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "46",
+        "question": "To build a domain KG with limited data, what steps can be learned from the paper:\nA. Collect more corpus from authoritative institutes.\nB. Use LLMs which do not need domain fine-tuning.\nC. Prompt the LLMs to describe the relationship between any two entities in a segment of text.\nD. Use LLMs to output all related entity pairs and their corresponding relationships directly.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "46",
+        "question": "Which are not the reasons why GPT-3.5-turbo was employed in the experiment instead of a stronger model like GPT-4?\nA. Stronger model like GPT-4 can not bring out the advantage of DAL\nK.\nB. Stronger model like GPT-4 can be weaker in domain QA for over training.\nC. To keep the performance of the base model close to other baselines\nD. To show that DALK can fit with models which are not that strong.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "46",
+        "question": "Which are not the reasons why GPT-3.5-turbo was employed in the experiment instead of a domain fine-tuned model?\nA. A model without domain fine-tuning is more helpful to show the improvement brought by DALK\nB. Domain fine-tuning can weaken the advantage of DALK.\nC. Domain fine-tuned model can not fit DALK as GPT-3.5-turbo do.\nD. To avoid waste of computational resources.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "48",
+        "question": "Which challenges or limitations of LLMs are addressed by integrating KGs, according to the paper?\nA. LLMs often generate hallucinated responses due to the lack of structured knowledge to ground their reasoning.\nB. LLMs struggle to process unstructured data without additional sources of contextual knowledge.\nC. LLMs typically perform well on tasks that require structured reasoning without the need for any external knowledge augmentation.\nD. The inability of LLMs to handle large amounts of raw, unstructured text can be mitigated by integrating KGs.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "48",
+        "question": "Which of the following conclusions can be drawn from the experiments conducted in the paper regarding the integration of knowledge graphs (KGs) with LLMs?\nA. Programming language representations of knowledge graphs (e.g., Python code) significantly improve the performance of LLMs in reasoning tasks compared to using natural language descriptions.\nB. LLMs that are fine-tuned with knowledge graph embeddings demonstrate better performance on reasoning tasks than zero-shot LLMs.\nC. The integration of KGs into LLMs causes a significant reduction in the model’s ability to generalize to unseen data.\nD. The performance of LLMs can be significantly enhanced by integrating structured knowledge graphs during the training phase, but this requires substantial changes to the architecture.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "48",
+        "question": "In the paper, which of the following are discussed as limitations or challenges when incorporating KGs into LLMs for reasoning tasks?\nA. The integration of KGs may lead to data sparsity issues due to the limited availability of structured data in certain domains.\nB. Large-scale knowledge graphs require substantial fine-tuning to align with the specific reasoning tasks of the LLMs, making the process computationally expensive.\nC. While KGs offer valuable structured data, they may introduce noise or irrelevant information if not carefully curated, impacting the LLM's performance.\nD. The use of KGs in LLMs reduces the model's flexibility in handling novel tasks, as the KG-specific representations limit the model's ability to generalize across different domains.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "49",
+        "question": "What trend was observed regarding the effect of model size on temporal alignment?\nA. Larger models showed no improvement in temporal alignment, indicating that model size is irrelevant.\nB. Smaller models showed diminishing returns in temporal alignment, while larger models continued to benefit.\nC. Larger models showed diminishing returns in temporal alignment, while smaller models continued to benefit.\nD. . Smaller models improve slower than larger model in the case of target year",
+        "correct_answer": ""    },
+    {
+        "paper_id": "49",
+        "question": "Which of the following best describe the knowledge anchoring effect?\nA. LMs tend to rely on knowledge from a specific past time period, even when more recent data is available.\nB. Even when exposed to new information, LMs may still default to older answers they were originally trained on.\nC. The order of training data does not affect which information the model prioritizes when answering questions.\nD. Aligning a model to a recent time does not necessarily improve its ability to recall historical information.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "49",
+        "question": "Which of the following findings suggest that language models do not naturally organize knowledge chronologically?\nA. LMs trained with data up to 2022 tend to provide answers based on 2019 knowledge.\nB. LMs can be aligned to past years with better accuracy than their unaligned state.\nC. Without specific intervention, LMs do not reliably use the most recent knowledge they have seen.\nD. Finetuning on a historical time period can boost accuracy more than aligning to the pretraining cutoff year.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "49",
+        "question": "Based on the paper， what counterintuitive effects were observed regarding different alignment strategies?\nA. Aligning LLaMa2-70B to 2015 led to fewer errors than aligning to 2022.\nB. Prompting with explicit time references can sometimes be less effective than finetuning without time markers.\nC. Adaptive finetuning helps reduce hallucination by making LMs use the latest correct knowledge they have.\nD. Aligning LMs to a recent year does not necessarily improve their performance on historical facts.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "50",
+        "question": "What generalization abilities were demonstrated by PH3 that exceeded initial expectations?\nA. PH3 maintained effectiveness across different LM architectures, from GPT to LLaMa models.\nB. The method worked across different task types, including factual QA and knowledge retrieval.\nC. PH3 could only be applied to models trained on a specific dataset, limiting its usability.\nD. Pruning attention heads did not impact general model performance outside of knowledge conflicts.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "50",
+        "question": "What effect did PH3 have on LMs when processing conflicting and supporting external contexts simultaneously?\nA. LMs still tended to prefer internal memory when both supporting and conflicting external contexts were present.\nB. Blocking attention heads that processed conflicting external knowledge helped the LM prioritize correct information.\nC. PH3 can help LMs to disregard external knowledge, even when it contained the correct answer.\nD. PH3 was only useful in binary decision-making cases and could not handle cases with multiple conflicting pieces of evidence.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "50",
+        "question": "What unexpected patterns were found in how LMs prioritize internal memory versus external context during knowledge conflicts?\nA. LMs have a strong preference for internal memory when conflicting and supporting contexts are both present.\nB. When provided with conflicting information, LMs can still extract factual data from external sources under specific conditions.\nC. The way LMs resolve knowledge conflicts is influenced by the ordering of conflicting and supporting evidence.\nD. LMs can be manipulated to prefer one knowledge source over the other through targeted pruning of attention heads.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "50",
+        "question": "What were the key findings regarding how PH3 mitigates knowledge conflicts in language models?\nA. PH3 increased internal memory reliance by up to 44.0% without updating model parameters.\nB. PH3 improved external context reliance by up to 38.5%, allowing more flexible knowledge retrieval.\nC. PH3 worked across multiple datasets and showed cross-model, cross-relation, and cross-format generalization.\nD. PH3 mitigated knowledge conflicts by selectively pruning specific attention heads in later layers.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "51",
+        "question": "What are the advantages of the MAKGED framework in knowledge graph error detection?\nA. MAKGED can effectively handle logical errors in large-scale knowledge graphs through a multi-agent cooperation mechanism, thereby improving detection accuracy.\nB. MAKGED uses GNNs to capture local and global structural information of graphs, and combines the semantic understanding ability of LLMs to form a multi-dimensional error detection mechanism.\nC. MAKGED's agent model is trained using a reinforcement learning algorithm and can adaptively adjust detection strategies in a dynamic environment.\nD. MAKGED ensures the robustness of detection results through multiple rounds of discussion and voting mechanisms, especially when facing complex triples.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "51",
+        "question": "Considering the potential risks associated with RAG systems, which rely on external knowledge bases to support LLMs in generating answers, which of the following mechanisms or actions can be regarded as contamination of the system's knowledge component, potentially undermining its intended functionality?\nA. Infiltrating the knowledge base with carefully crafted adversarial data points designed to be semantically similar to target queries in high-dimensional embedding space, thus enticing the retriever to extract malicious content to influence LLM generation.\nB. Directly tampering with the underlying data sources used to construct the knowledge base, such as unauthorized edits to public wiki pages or introducing false documents on indexed websites, representing an effective means of contaminating the system.\nC. Employing advanced prompt engineering techniques during the query phase to directly influence the output of the LLM, bypassing the retrieval mechanism, which can be considered a form of external user input contamination affecting system functionality.\nD. Unintentionally including outdated or factually inaccurate information during the initial construction or subsequent updates of the knowledge base, which can be viewed as a form of self-contamination, leading the RAG system to disseminate incorrect knowledge.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "51",
+        "question": "Considering the novel vulnerabilities introduced by RAG systems, how does the PoisonedRAG attack fundamentally exploit the expanded attack surface inherent in these architectures, which goes beyond the security considerations of standalone large language models?\nA. PoisonedRAG primarily targets the allocation of computational resources within the RAG process. By overwhelming the system, it forces reliance on cached, potentially outdated or malicious information, thereby bypassing real-time retrieval to achieve its attack objectives.\nB. By strategically injecting small amounts of carefully crafted malicious text directly into external knowledge bases, PoisonedRAG manipulates the contextual information provided to large language models. This highlights a critical vulnerability in building language models on external, potentially untrusted data sources.\nC. This attack exploits the inherent trust large language models place in the outputs of retriever components, revealing a crucial trust vulnerability. Regardless of the true origin or content of the retrieved knowledge, LLMs assume it to be accurate and unbiased.\nD. PoisonedRAG introduces specially designed adversarial queries to confuse the similarity computations of the retriever, ensuring that the LLM receives a set of entirely unrelated or misleading documents, thus preventing the generation of accurate or truthful responses to user queries.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "51",
+        "question": "Regarding knowledge poisoning attacks on RAG systems, the following statements are accurate:\nA. The core of this attack involves contaminating the external knowledge base that RAG systems rely on. By injecting carefully crafted malicious text, attackers can induce large language models to generate predetermined answers to specific questions, thereby achieving purposes such as misinformation or malicious propaganda.\nB. When executing such attacks, attackers may need varying degrees of understanding of the RAG system's retriever. In a white-box attack scenario, attackers can access the retriever's parameters and optimize queries, while in a black-box scenario, they can only rely on observing and inferring the system's input-output behavior.\nC. Although RAG technology aims to enhance large language models' ability to acquire up-to-date knowledge and reduce hallucinations, the introduction of external knowledge bases also presents a new security risk. Specialized defense mechanisms are needed to address potential threats to knowledge integrity, such as credibility assessments of retrieved documents or adversarial training to enhance model robustness. These defense methods are preliminarily evaluated in research but show limitations.\nD. To effectively execute a knowledge poisoning attack, malicious text typically needs to meet both retrieval and generation conditions. The former ensures that the malicious text can be recalled by the retriever for the target question, while the latter ensures that when the large language model uses this text as context, it is more likely to generate the attacker's desired false or misleading answers.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "42",
+        "question": "Which of the following statements about FanOutQA benchmarking results and model performance implications are supported by the paper?\nA. Models with larger context windows demonstrated a strong positive correlation between performance and context length in the evidence-provided setting, but not in the closed-book setting.\nB. In the open-book setting, performance degradation occurred primarily because models forgot the original question as their context windows filled with retrieved passages across multiple retrieval rounds.\nC. Closed-book performance issues were predominantly caused by models 2019 inability to avoid hallucinations even for factual questions answerable via well-known general knowledge.\nD. Human volunteers achieved higher accuracy than all tested LLMs in the open-book setting, but their performance remained substantially below the upper bound established by the ground-truth decomposition strategy.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "42",
+        "question": "Based on FanOutQA’s dataset construction and quality assurance process, which of the following statements are true?\nA. A computational pipeline involving cosine similarity thresholds and manual deduplication was used to remove questions answerable from a single Wikipedia article during filtering.\nB. The dataset exhibits significant topic diversity, with the largest category (Geography) constituting under 20% of all questions and no single domain dominating over half the dataset.\nC. Automatic metrics like ROUGE and BLEURT were deemed insufficient for comprehensive evaluation due to their bias toward favoring answers with extraneous text over precise factual equivalence.\nD. Writers were explicitly required to include numerical units in questions involving quantitative answers to reduce ambiguity during evaluation.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "42",
+        "question": "Which criteria were essential components of FanOutQA's dataset filtering pipeline to ensure question quality?\nA. Removing questions where sub-questions could be answered through alternative Wikipedia article combinations using semantic similarity.\nB. Automatic verification that all sub-question answers are explicitly contained in their respective Wikipedia article bodies.\nC. Requirement that human annotators use question templates derived from existing multi-hop QA benchmarks.\nD. Elimination of questions with multiple valid decomposition strategies through cosine similarity checks on vector embeddings.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "42",
+        "question": "Which of the following statements accurately differentiate FanOutQA from prior multi-hop QA benchmarks like HotpotQA and MuSiQue?\nA. FanOutQA requires nonlinear reasoning chains with an average of seven hops per question, while earlier datasets focus on linear chains with fewer than four hops.\nB. FanOutQA evaluates inter-document dependencies across natural long-form articles, whereas prior benchmarks rely on artificially constructed documents or single-document comprehension.\nC. FanOutQA includes human-written decompositions for imitation learning, while earlier datasets exclusively use algorithmically generated sub-questions without human annotation.\nD. FanOutQA measures performance using metrics like BLEURT and GPT-4-based factual equivalence, whereas prior benchmarks prioritize ROUGE scores without model-based judgment.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "43",
+        "question": "Which of the following statements about agent strategies and performance evaluations of CODEAGENT are supported by experimental results in the paper?\nA. The Rule-based strategy explicitly enforces sequential tool usage patterns inspired by developer workflows but restricts LLM autonomy.\nB. ReAct strategy outperformed OpenAIFunc across all LLMs due to its ability to interleave tool invocation with dynamic reasoning traces.\nC. Code symbol navigation ablation caused the most severe performance drop due to its frequent usage for dependency resolution.\nD. GPT-4-turbo with Rule-based strategy achieved absolute pass rate improvements exceeding 15% over standalone generation on repository-level tasks.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "43",
+        "question": "Which of the following programming tools are integrated into the CODEAGENT framework to enable interaction with software artifacts during repo-level code generation?\nA. Website search and documentation reading tools for retrieving programming knowledge from online resources and repository documents.\nB. Code symbol navigation tool for static analysis and reuse of existing code components within the repository.\nC. Automated test case generator for synthesizing new unit tests without execution feedback from the runtime environment.\nD. Format checker and code interpreter tools for verifying syntax correctness and executing generated code in a sandbox environment.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "43",
+        "question": "Which of the following statements about CODEAGENT's agent strategies and their experimental performance are correct?\nA. The OpenAIFunc strategy achieved optimal results by leveraging proprietary API integrations unavailable to other strategies.\nB. The ReAct strategy improved code generation through dynamic tool invocation based on interlaced reasoning-action cycles.\nC. The Tool-Planning strategy underperformed due to excessive reliance on predefined subtask decomposition hierarchies.\nD. The Rule-based strategy enforced strict tool-usage sequences mirroring developer workflows, yielding robust cross-LLM improvements.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "43",
+        "question": "Which of the following statements about the tools integrated into the CODEAGENT framework and their functionalities are correct?\nA. The Website Search tool retrieves relevant programming solutions from external knowledge resources using a search engine and summarizes the content to aid code generation.\nB. The Documentation Reading tool employs static analysis to identify pre-existing code symbols and dependencies within the repository to facilitate code reuse.\nC. The Code Symbol Navigation tool leverages tree-sitter to analyze code repositories and retrieve class/function definitions or module-level symbols for contextual dependency resolution.\nD. The Code Interpreter tool executes generated code in a sandboxed runtime environment and provides execution feedback to validate functional correctness through predefined test cases.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "52",
+        "question": "What are the characteristics of WISE's Side Memory?\nA. Side Memory is a parametric module, independent of the main model parameters.\nB. Side Memory is initialized by randomly perturbing the original Wv.\nC. WISE automatically decides whether to use Side Memory during inference based on activation values.\nD. Side Memory is typically deployed in the early layers of the Transformer to avoid disrupting the main semantic flow.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "52",
+        "question": "Which of the following practices or designs can improve WISE's Generalization capability in 'Lifelong Editing'?\nA. Increasing the number of Side Memory layers to enhance expressiveness.\nB. Controlling the knowledge density of each subspace to satisfy 𝑘⋅𝜌<1.\nC. Editing in higher Transformer layers (e.g., 30–32) to strengthen logical abstraction.\nD. Randomly augmenting edit data with tokens to improve contextual adaptability.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "52",
+        "question": "What key considerations were incorporated into the design of WISE's Knowledge Sharding & Merging module?\nA. Different edits are assigned to distinct parameter subspaces to avoid conflicts.\nB. Subspaces are generated via random masks, and parameter normalization is required before merging.\nC. Some parameter regions overlap between subspaces to serve as fusion anchors.\nD. Pruning methods are used to filter out low-activation parameters, saving Side Memory space.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "52",
+        "question": "Which of the following statements about WISE's Memory Sharding and Subspace Overlap are correct?\nA. Overlapping regions between multiple memory subspaces serve as anchors for knowledge fusion.\nB. Whenρ⋅k > 1, the knowledge density in subspaces is lower, helping reduce conflicts.\nC. The subspace overlap ratio (ρ²) determines the expected proportion of shared parameters between any two subspaces.\nD. Randomly generated masks ensure that gradient updates from different edits do not interfere with each other.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "53",
+        "question": "What are the key design components of MEMORYLLM's self-updating mechanism (Self-Update)?\nA. Updating only the last K memory tokens per layer\nB. Adjusting all parameters via full backpropagation\nC. Randomly discarding old memory tokens to simulate exponential forgetting\nD. Using an external retrieval module to assist updates",
+        "correct_answer": ""    },
+    {
+        "paper_id": "53",
+        "question": "What methods does the training strategy of MEMORYLLM include?\nA. Inject knowledge in stages and disable gradients to enhance long-term memory\nB. Improve continuous text understanding through long-context training\nC. Directly fine-tune all parameters of Llama2\nD. Design adversarial tasks to alleviate the forgetting of old knowledge",
+        "correct_answer": ""    },
+    {
+        "paper_id": "53",
+        "question": "The training strategies of MEMORYLLM include the following methods:\nA. Injecting knowledge in stages and disabling gradients to enhance long-term memory\nB. Improving continuous text understanding through long-context training\nC. Directly fine-tuning all parameters of Llama2\nD. Designing adversarial tasks to alleviate the forgetting of old knowledge",
+        "correct_answer": ""    },
+    {
+        "paper_id": "53",
+        "question": "Which of the following are mechanisms used by MEMORYLLM to address the forgetting problem?\nA. Designing cross-document context prediction tasks\nB. Introducing gradient regularization during updates to prevent overwriting old knowledge\nC. Adopting an exponential forgetting strategy by randomly discarding some old memory tokens during each update\nD. Using attention mechanisms to force the model to recall the earliest injected knowledge",
+        "correct_answer": ""    },
+    {
+        "paper_id": "54",
+        "question": "How are the seven types of RAG noise classified in this paper?\nA. Only classified into beneficial and harmful noise.\nB. Classified into beneficial noise (semantic noise, data-type noise, illegal sentence noise) and harmful noise (counterfactual noise, supportive noise, orthographic noise, prior noise).\nC. Only harmful noise is discussed.\nD. Only semantic noise and data-type noise are discussed.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "54",
+        "question": "According to the experiments in the paper, which noises are categorized as “Beneficial Noise”?\nA. Semantic Noise\nB. Datatype Noise\nC. Illegal Sentence Noise\nD. Counterfactual Noise",
+        "correct_answer": ""    },
+    {
+        "paper_id": "54",
+        "question": "Which steps are included in the NoiserBench data construction pipeline?\nA. QA Instance Generation\nB. Adversarial Training\nC. Entailment Verification\nD. Noise Introduction",
+        "correct_answer": ""    },
+    {
+        "paper_id": "55",
+        "question": "What applications of the IB theory are proposed in the paper?\nA. A new evaluation metric for noise filtering.\nB. Adversarial training of large language models.\nC. Selection of supervised fine-tuning data.\nD. Construction of reinforcement learning rewards.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "55",
+        "question": "According to the paper, what are the main advantages of applying the Information Bottleneck method to noise filtering in RAG models?\nA. Improved accuracy of the generated output\nB. Enhanced ability to filter out irrelevant or noisy information\nC. Faster retrieval times\nD. Reduced memory usage for storing retrieved data",
+        "correct_answer": ""    },
+    {
+        "paper_id": "55",
+        "question": "What are the main challenges in retrieval-augmented generation that the paper aims to address using noise filtering?\nA. Ensuring the relevance of retrieved passages\nB. Dealing with large-scale datasets\nC. Avoiding irrelevant or noisy information in the generated output\nD. Speeding up the model’s training process",
+        "correct_answer": ""    },
+    {
+        "paper_id": "56",
+        "question": "Which of the following statements about the multi-concept instruction tuning strategy of the MC-LLaVA model are correct?\nA. MC-LLaVA uses a unique training method that integrates multiple user-defined concepts in a single training step, thereby avoiding the tedious process of training a separate model for each concept in the traditional method.\nB. The model effectively reduces the computational resources and time required for joint training of multiple concepts by introducing personalised text prompts and using visual token information to initialise concept tokens.\nC. During the inference stage, MC-LLaVA adopts a personalised visual prompt method that aggregates positional confidence maps to enhance the model's recognition and positioning capabilities for multiple concepts, improving the model's adaptability in complex scenarios.\nD. The multi-concept instruction tuning strategy of MC-LLaVA relies on a high-quality instruction tuning dataset that contains carefully collected multi-character and multi-object images from movies, as well as manually generated question-answer samples for multi-concept scenes, which are highly diverse and representative.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "56",
+        "question": "What is the main purpose of introducing personalised visual prompts in the inference process of the MC-LLaVA model?\nA. By aggregating the location confidence map, the model's ability to recognise and locate multiple concepts is enhanced, thereby providing more accurate personalised responses when processing complex scenes.\nB. Using personalised visual prompts reduces the model's dependence on large-scale training data, enabling it to maintain high-performance multi-concept understanding even when data is limited.\nC. The introduction of personalised visual prompts improves the model's generalisation ability when processing multi-modal input, enabling it to more effectively understand and generate content related to the specific needs of users.\nD. The application of personalised visual prompts enables MC-LLaVA to dynamically adjust its internal parameters during the inference stage to adapt to the preferences and needs of different users and provide more customised services.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "56",
+        "question": "What are the characteristics of the high-quality instruction tuning dataset for the MC-LLaVA model?\nA. The dataset carefully collects multi-character and multi-object images from movies, and manually generates question-answer samples for multi-concept scenarios to ensure the diversity and representativeness of the data.\nB. The dataset contains a large number of synthetic images, which are generated using advanced generative adversarial network technology to enhance the model's understanding of rare concepts.\nC. The dataset not only covers static images, but also includes video clips, so that the model can learn time series information during training and improve its understanding of dynamic scenes.\nD. The question-answer samples in the dataset have been reviewed by experts to ensure linguistic accuracy and content relevance, providing high-quality training resources for model command tuning.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "57",
+        "question": "Which memory mechanisms inspired by the human brain are integrated into the HippoRAG framework to enhance the ability of large language models in handling complex information integration tasks?\nA. By simulating the indexing function of the hippocampus, HippoRAG constructs an open knowledge graph that acts as an artificial hippocampal index, storing and associating fragments of information from various sources.\nB. The framework leverages the perceptual processing capabilities of the neocortex by employing instruction-tuned language models to convert textual corpora into structured knowledge representations for efficient query resolution.\nC. HippoRAG employs reinforcement learning techniques to dynamically adjust model parameters, mimicking the neural plasticity and adaptability of the human brain in response to novel information.\nD. Through the use of personalized PageRank algorithms, HippoRAG performs context-based searches within the knowledge graph, emulating the pattern completion processes involved in memory retrieval in the human brain.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "57",
+        "question": "What advantages does HippoRAG demonstrate over traditional Retrieval-Augmented Generation methods in multi-hop question answering tasks?\nA. By achieving multi-hop reasoning in a single retrieval step, HippoRAG avoids the accumulation of errors typical in traditional RAG systems that require multiple rounds of retrieval and generation, resulting in improved accuracy and consistency.\nB. Due to the construction of an efficient knowledge graph index, HippoRAG significantly reduces computational cost and latency when handling multi-hop questions, making it more practical in resource-constrained environments.\nC. HippoRAG introduces a self-supervised learning mechanism that enables the system to autonomously optimize its retrieval and generation capabilities without relying on manually labeled data, thus enhancing generalization performance.\nD. The framework integrates graph neural networks to dynamically weight nodes and edges in the knowledge graph, improving the modeling of relationships between disparate sources in complex queries.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "57",
+        "question": "What key techniques are employed by HippoRAG in constructing and utilizing knowledge graphs to simulate memory encoding and retrieval processes of the human brain?\nA. It uses Open Information Extraction (OpenIE) to extract triples from text, constructing a schema-less knowledge graph similar to how the neocortex processes perceptual inputs.\nB. It applies a personalized PageRank algorithm to compute probability distributions over the graph based on seed nodes, simulating the hippocampus's activation of relevant memories in response to partial perceptual cues.\nC. By applying hierarchical clustering to the knowledge graph, HippoRAG identifies and organizes concepts at multiple levels, mimicking the brain’s hierarchical organization of information.\nD. HippoRAG leverages attention mechanisms to assign weights to graph nodes, highlighting the most relevant information for a given query, similar to how attention is directed during memory retrieval in the human brain.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "57",
+        "question": "How does HippoRAG address the challenge of integrating knowledge across multiple documents—a common issue in traditional RAG approaches?\nA. By incorporating reinforcement learning strategies, HippoRAG adaptively modifies its retrieval paths during inference to prioritize access to the most query-relevant sources, enhancing the efficiency and accuracy of knowledge integration.\nB. The framework uses personalized PageRank algorithms to efficiently identify subgraphs relevant to the query within the knowledge graph, enabling one-step integration of cross-document information and avoiding fragmentation.\nC. HippoRAG introduces a dynamic memory update mechanism that automatically adjusts the knowledge graph structure when new information is processed, ensuring up-to-date reasoning capabilities.\nD. By constructing the knowledge graph offline, HippoRAG pre-establishes associations between different information fragments, allowing the system to leverage these links during online retrieval without depending on multiple iterative steps.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "58",
+        "question": "The rStar paper reports that LLaMA2-7B's accuracy on GSM8K improves from 12.51% (few-shot CoT) to 63.91% using rStar. Assuming the total number of test questions in GSM8K is 1,319 (standard test set size), which of the following does NOT best approximate the number of additional correct answers enabled by rStar?\nA. ~677\nB. ~678\nC. ~6,700\nD. ~843",
+        "correct_answer": ""    },
+    {
+        "paper_id": "58",
+        "question": "In the MCTS reward function design, rStar avoids using self-rewarding for intermediate nodes. Based on the ablation study, which of the following is NOT true about the percentage drop in accuracy when replacing rStar's reward function with self-evaluation for LLaMA3-8B on GSM8K?\nA. 4.10%\nB. 5.51%\nC. 94.49%\nD. Both A and B are correct but answer A is the primary metric",
+        "correct_answer": ""    },
+    {
+        "paper_id": "58",
+        "question": "In the mutual consistency mechanism, the discriminator SLM is given a partially masked trajectory (e.g., 20%-80% of steps) to complete. Suppose a reasoning trajectory has 6 steps, and the discriminator is given the first 3 steps as a hint. Which of the following statements does NOT align with the methodology?\nA. The discriminator must regenerate all 6 steps from scratch\nB. The discriminator's completion is compared only to the final answer\nC. The discriminator completes steps 4-6, and consistency is checked against the generator's steps 4-6\nD. The discriminator's output is ignored if it contradicts the generator's majority voting result",
+        "correct_answer": ""    },
+    {
+        "paper_id": "58",
+        "question": "The ablation study tests different discriminator models for LLaMA3-8B-Instruct on GSM8\nK. If using GPT-4 as the discriminator improves accuracy from 91.13% (Phi3-Mini) to 92.57%, which of the following is NOT true about the marginal gain compared to using the generator's majority voting baseline (88.70%)?\nA. 3.87%\nB. 1.58%\nC. The gain is statistically insignificant because GPT-4 is not an SLM\nD. Both A and B are correct, but the paper emphasizes absolute gains ",
+        "correct_answer": ""    },
+    {
+        "paper_id": "59",
+        "question": "Which of the following statements about the datasets used in the Multimodal Self-Correction Instruction Tuning framework are correct?\nA. The Attribute Generation Tuning Data employs in-context learning with a small set of seed attributes to generate new attributes from both images and texts.\nB. The Chain-of-Thought Tuning Data introduces contrastive samples with balanced positive and negative attributes to prevent overfitting during self-correction.\nC. AGTD is constructed by merging modality-specific attributes generated separately from images and texts to reduce semantic gaps in multimodal fusion.\nD. CTTD incorporates a structured 5-step reasoning process to validate attribute relevance through image-based verification and text-based common-sense analysis.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "60",
+        "question": "Question: Based on the concept of prompt engineering discussed in the context of DDPrompt, which of the following are true statements regarding the enhancement of LLMs through prompt design strategies?\nA. Prompt engineering is strictly limited to static, handcrafted templates and excludes adaptive optimization techniques like gradient-based prompt tuning.\nB. DDPrompt's methodology, which employs question clustering and optimal trigger sentence selection, reduces manual intervention and enhances prompt variety to improve LLM performance on complex tasks.\nC. Advanced prompt engineering strategies, such as dynamic temperature sampling and automated rationale pruning, are excluded from DDPrompt's framework as outlined in the paper.\nD. Effective prompt engineering enables the integration of multiple reasoning strategies across different prompt iterations to enhance LLM outputs.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "62",
+        "question": "Question: In the context of the paper \"Joint Model of Entity Recognition and Relation Extraction with Self-attention Mechanism,\" which aspects are true about the roles and challenges associated with the Multi-head Self-attention Mechanism? Select all that apply.\nA. The Multi-head Self-attention Mechanism enables strictly partitioned head specialization to simultaneously model positional invariance and syntactic dependencies, directly improving F1-scores for nested entity recognition.\nB. The paper provides exhaustive ablation studies proving that individual attention heads exclusively encode entity-type distributions, with strict orthogonality constraints minimizing inter-head redundancy.\nC. The mechanism’s capacity to capture long-range syntactic patterns through interleaved attention subspaces is pivotal for obviating handcrafted dependency parses in relation extraction pipelines.\nD. Implementation nuances like learnable relative attention biases and quadratic gradient normalization are explicitly derived to address vanishing attention scores in the paper’s architecture.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "62",
+        "question": "Which components of the proposed joint model contribute to its ability to capture word dependencies and extract multiple relations for an entity?\nA. Integration of self-attention mechanism to learn intra-sentence dependencies without relying on distance between words.\nB. Utilization of BiLSTM layers to encode contextual information from both past and future token sequences.\nC. Application of multi-head selection in the sigmoid layer to simultaneously identify all possible semantic relations for a specific entity.\nD. Incorporation of label embedding to convey entity type information from the NER task to the relation extraction task.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "63",
+        "question": "Question: Which of the following settings in the FanOutQA benchmark is used to assess the performance of LLMs when they are provided with relevant Wikipedia articles, focusing on long-context and multi-hop reasoning capabilities across these documents?\nA. Closed Book setting, where models exclusively rely on parametric memory without retrieving external data, testing only intra-document pattern recognition.\nB. Evidence Provided setting, which supplies pre-selected evidence passages, evaluating token-level granularity in cross-document attention mechanisms and inter-dependency resolution.\nC. Open Book setting, enabling dynamic corpus updates via retrieval tools, prioritizing syntactic parsing heuristics over multi-hop deductive chains.\nD. Closed Data setting, requiring models to infer implicit citations through syntactic parsing while isolating parametric knowledge from external references.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "63",
+        "question": "Which of the following statements about the performance correlations and challenges in FanOutQA’s benchmark settings are supported by the paper?\nA. Models in the closed-book setting exhibit a strong positive correlation between maximum context window size and their ability to answer fan-out questions accurately.\nB. In the open-book setting, models frequently output summaries of the last retrieved passage instead of the final answer due to context window overflow erasing the original question.\nC. The closed-book setting shows no significant correlation between model performance and context length, as it relies solely on internal knowledge rather than retrieved information.\nD. Performance in the evidence-provided setting has a stronger correlation with context window length than in the open-book setting, as including more documents directly improves reasoning accuracy.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "63",
+        "question": "Which of the following findings about human evaluators in the open-book setting are documented in the FanOutQA study?\nA. Human volunteers achieved an 85% upper-bound accuracy when answering questions with access to Wikipedia, demonstrating significantly better reasoning than all tested LLMs.\nB. Human performance was measured using a 'loose accuracy' metric of 68.5%, which accounts for partial matches and typographical variations in answers.\nC. The model-judged accuracy for humans (45.2%) was lower than the loose string accuracy because it penalized answers for formatting inconsistencies unrelated to factual correctness.\nD. Humans outperformed all LLMs in the open-book setting, with their accuracy statistically higher than the best model’s performance (p < 0.05).",
+        "correct_answer": ""    },
+    {
+        "paper_id": "63",
+        "question": "Which criteria were essential components of FanOutQA's dataset filtering pipeline to ensure question quality?\nA. Removing questions where sub-questions could be answered through alternative Wikipedia article combinations using semantic similarity.\nB. Automatic verification that all sub-question answers are explicitly contained in their respective Wikipedia article bodies.\nC. Requirement that human annotators use question templates derived from existing multi-hop QA benchmarks.\nD. Elimination of questions with multiple valid decomposition strategies through cosine similarity checks on vector embeddings.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "63",
+        "question": "Which of the following statements accurately differentiate FanOutQA from prior multi-hop QA benchmarks like HotpotQA and MuSiQue?\nA. FanOutQA requires nonlinear reasoning chains with an average of seven hops per question, while earlier datasets focus on linear chains with fewer than four hops.\nB. FanOutQA evaluates inter-document dependencies across natural long-form articles, whereas prior benchmarks rely on artificially constructed documents or single-document comprehension.\nC. FanOutQA includes human-written decompositions for imitation learning, while earlier datasets exclusively use algorithmically generated sub-questions without human annotation.\nD. FanOutQA measures performance using metrics like BLEURT and GPT-4-based factual equivalence, whereas prior benchmarks prioritize ROUGE scores without model-based judgment.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "64",
+        "question": "Which of the following factors were shown to significantly affect model performance in different FanOutQA benchmark settings according to the analysis?\nA. The presence of human-written decompositions during inference correlated with improved reasoning in closed-book settings.\nB. Maximum context window size showed strong positive correlation with accuracy in evidence-provided but not closed-book settings.\nC. Neural text degradation severity inversely correlated with the number of Wikipedia references embedded in model responses.\nD. Performance in open-book settings was hindered by information truncation when combining multiple retrieved documents.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "64",
+        "question": "Which of the following statements correctly describe the strengths of TSED and GPT-based similarity scores in evaluating code similarity?\nA. TSED demonstrates higher computational efficiency compared to traditional sequence-based metrics while maintaining strong correlation with execution match results.\nB. GPT-based similarity scores achieve the highest F1 scores in thresholding experiments by effectively capturing semantic nuances and structural patterns in code.\nC. TSED provides a more interpretable and stable evaluation by leveraging AST edit distances, avoiding the black-box nature of LLM-based approaches.\nD. GPT similarity scores show consistent stability across multiple iterations, ensuring reliable and repeatable code similarity assessments.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "65",
+        "question": "Which of the following statements about GPT-4's performance in simulating text-based world states are supported by the findings of the BYTESIZED 32-State-Prediction benchmark?\nA. GPT-4 achieves higher accuracy in modeling environment-driven transitions (Fenv) compared to action-driven transitions (Fact) due to its ability to infer implicit dynamics.\nB. Static transitions, where no changes occur to object properties or game progress, are predicted more accurately than dynamic transitions requiring state modifications.\nC. Providing human-written or LLM-generated rules in the context significantly improves simulation accuracy for both action-driven and environment-driven transitions.\nD. GPT-4 struggles most with transitions involving arithmetic, common-sense reasoning, or scientific knowledge, leading to incorrect or unaltered property values.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "65",
+        "question": "Based on the experimental results in the paper, which of the following conclusions are valid regarding GPT-4’s performance as a text-based world simulator?\nA. GPT-4 achieves higher accuracy in predicting full game states compared to state difference predictions for dynamic transitions, as generating the entire state reduces format-related errors.\nB. Static transitions, where no changes occur to object properties, are simulated with significantly higher accuracy than dynamic transitions, even when explicit game rules are omitted.\nC. Providing LLM-generated rules as context yields comparable performance to human-authored rules, indicating that LLMs can autonomously generate reliable simulation guidelines.\nD. GPT-4’s ability to predict game progress metrics, such as reward and termination status, is largely unaffected by the presence or absence of contextual rules describing scoring conditions.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "66",
+        "question": "Which of the following strategies or components in AutoCodeRover contribute to its effectiveness in resolving GitHub issues by leveraging program structure and iterative analysis?\nA. AutoCodeRover uses stratified code search APIs to iteratively refine context retrieval based on AST analysis, prioritizing class/method-level navigation over file-level exploration.\nB. The framework exclusively relies on spectrum-based fault localization to identify buggy methods, bypassing natural language analysis of issue descriptions.\nC. Integration of test-suite execution results during patch validation enables retry loops for generating syntactically correct patches that pass developer-provided tests.\nD. The context retrieval stage combines keyword extraction from issue descriptions with SBFL-identified suspicious methods to cross-reference program structure and dynamic execution traces.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "66",
+        "question": "Which of the following experimental results or comparisons highlight AutoCodeRover’s advantages over baseline methods like Swe-agent and manual developer efforts?\nA. AutoCodeRover resolved 57 GitHub issues in SWE-bench-lite with an average cost of $0.43 per task, outperforming Swe-agent’s 54 resolved issues at $2.51 per task.\nB. AutoCodeRover achieved a 65.4% correctness rate for plausible patches, while developers spent an average of 2.68 days per issue, indicating slower resolution times.\nC. The use of SBFL increased resolved issues from 19% to 22% in SWE-bench-lite by prioritizing methods unrelated to issue descriptions during context retrieval.\nD. AutoCodeRover@3 resolved 26% of SWE-bench-lite issues with 112k tokens per task, while Swe-agent required 245k tokens for 18% efficacy, demonstrating higher token efficiency.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "67",
+        "question": "Question: What are the benefits and challenges of integrating external programming tools into the CODEAGENT framework for enhancing repo-level code generation, and how do agent strategies like ReAct and Rule-based Tool Usage facilitate this process?\nA. Integrating external tools invariably introduces non-deterministic outputs through WebSearch and DocSearch, reducing reproducibility despite providing documentation access.\nB. While code symbol navigation and format checking require exhaustive cross-file dependency resolution, they strictly enforce syntactic correctness, which is the sole determinant of accurate repo-level generation.\nC. ReAct employs multi-hop reasoning to infer latent contextual dependencies, whereas Rule-based Tool Usage applies static finite-state automata derived from repository metadata, systematically addressing integration barriers.\nD. The increased complexity of tool integration universally forces LLMs to bypass dynamic testing phases, optimizing accuracy-efficiency tradeoffs through static type inference.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "67",
+        "question": "Which of the following statements about agent strategies and performance evaluations of CODEAGENT are supported by experimental results in the paper?\nA. The Rule-based strategy explicitly enforces sequential tool usage patterns inspired by developer workflows but restricts LLM autonomy.\nB. ReAct strategy outperformed OpenAIFunc across all LLMs due to its ability to interleave tool invocation with dynamic reasoning traces.\nC. Code symbol navigation ablation caused the most severe performance drop due to its frequent usage for dependency resolution.\nD. GPT-4-turbo with Rule-based strategy achieved absolute pass rate improvements exceeding 15% over standalone generation on repository-level tasks.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "67",
+        "question": "Which of the following statements about AutoCodeRover's iterative code search and program analysis strategies are correct?\nA. AutoCodeRover prioritizes unstructured file-level navigation to retrieve code context, ignoring class and method hierarchies during the search process.\nB. Spectrum-based fault localization outputs are incorporated to refine search directions by prioritizing methods with higher suspiciousness scores derived from test execution spectra.\nC. The stratified search strategy iteratively invokes retrieval APIs based on previously collected context, enabling progressive refinement of code context via class/method signatures and snippet analysis.\nD. Abstract syntax tree parsing is utilized to implement structured code search APIs, allowing retrieval of method implementations and class hierarchies instead of raw file contents.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "67",
+        "question": "Which of the following programming tools integrated into CODEAGENT are categorized under information retrieval and code testing, respectively?\nA. WebSearch retrieves programming solutions from external websites and summarizes results using LLMs to assist in understanding complex requirements.\nB. DocSearch employs BM25 to extract relevant class or function documentation from repositories and summarizes lengthy content for code generation.\nC. SymbolSearch performs static analysis to identify predefined symbols in code files and navigates dependencies to enable code reuse within repositories.\nD. PythonREPL executes generated code in a sandboxed runtime environment and provides execution feedback to validate functional correctness.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "68",
+        "question": "Question: Which statements are true regarding the challenges of optimizing DAGs in the context of language agent orchestration, as discussed in the paper \"GPTSwarm: Language Agents as Optimizable Graphs\"?\nA. Optimizing DAGs for language agents involves resolving NP-hard cycle elimination problems through heuristic-based approximations while preserving task-specific utility metrics.\nB. The REINFORCE algorithm employs a custom reward function that penalizes cyclic edge configurations during the probabilistic sampling of DAG structures.\nC. Node optimization primarily focuses on dynamically adjusting LLM prompt embeddings through backpropagation-based gradient updates to minimize inference latency.\nD. The optimization process models edge connectivity as Bernoulli random variables subject to acyclicity constraints, enabling probabilistic graph rewiring.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "68",
+        "question": "Which experimental results highlight the benefits of GPTSwarm’s automatic optimization strategies?\nA. On Mini CrossWords, edge optimization with GPT-4-Turbo achieved higher accuracy than the Tree of Thought baseline by dynamically pruning adversarial communication paths.\nB. In HumanEval, iterative node optimization improved code generation accuracy by 12% through selective inclusion of unit test feedback in demonstration examples.\nC. GAIA experiments showed that swarms with seven TOT agents and self-consistency strategies outperformed GPT-4 with plugins by 90% on average across difficulty levels.\nD. MMLU experiments demonstrated that edge optimization could filter adversarial agents and restore swarm performance to match single truthful agent baselines.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "69",
+        "question": "Question: Based on the paper \"AFLoRA. Adaptive Freezing of Low Rank Adaptation in Parameter Efficient Fine-Tuning of Large Models,\" what are some of the key features of the Cubic Schedule employed in AFLoRA's adaptive mechanism?\nA. It completely freezes projection matrices after the first 30% of training iterations using a cubic function.\nB. It evaluates sensitivity scores through the Frobenius norm of gradient Hessians to determine rank allocation.\nC. It initiates training of all projection matrices simultaneously, freezing them in reverse proportion to their learning stability.\nD. It applies an exponential decay strategy to redistribute computational resources between attention and FFN layers.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "69",
+        "question": "Question: What are the primary benefits and implementation strategies of Adaptive Freezing in the AFLoRA method as discussed in the paper, and how does it compare to traditional LoRA and ELoRA methods in terms of performance metrics?\nA. AFLoRA employs static, predefined freezing schedules for low-rank matrices, reducing parameters more effectively than ELoRA’s random initialization of feature transformation vectors.\nB. The method computes freezing scores using both weight magnitudes and smoothed gradients to freeze projection matrices, enhancing computational efficiency while increasing regularization.\nC. AFLoRA dynamically adjusts trainable parameters via a cubic schedule for freezing, achieving 9.5× fewer parameters than LoRA, which maintains fixed FLOPs and trainable weights throughout training.\nD. AFLoRA’s adaptive freezing mechanism introduces higher computational overhead compared to ELoRA, resulting in negligible improvements in runtime or FLOPs reduction despite parameter efficiency.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "69",
+        "question": "Which of the following performance advantages of AFLoRA over LoRA and ELoRA are supported by the experimental results in the paper?\nA. AFLoRA achieves higher average accuracy on the GLUE benchmark while requiring 9.5× fewer trainable parameters than standard LoRA configurations.\nB. AFLoRA reduces training FLOPs by 2.96× compared to ELoRA by leveraging adaptive freezing of high-rank projection matrices during fine-tuning.\nC. AFLoRA demonstrates improved runtime efficiency over ELoRA by freezing all projection matrices after the first training epoch to minimize computational overhead.\nD. AFLoRA outperforms ELoRA on complex reasoning tasks like GSM8k even with a significantly lower rank for the frozen projection matrices.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "69",
+        "question": "Which of the following statements about the structural components and adaptive freezing mechanism in AFLoRA are correct?\nA. AFLoRA uses frozen projection matrices initialized with pre-trained weights from the original language model to maintain stability during fine-tuning.\nB. The AFLoRA module contains trainable down-projection and up-projection matrices alongside two feature transformation vectors that remain trainable throughout the entire process.\nC. The freezing score in AFLoRA incorporates both weight magnitude and gradient uncertainty to prioritize freezing layers with minimal impact on task performance.\nD. Adaptive freezing in AFLoRA progressively freezes projection matrices based on smoothed gradient magnitudes and uncertainty tensors while retaining trainable feature transformation vectors.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "70",
+        "question": "Which of the following statements about AFLoRA's freezing mechanism and module structure are supported by the paper?\nA. AFLoRA uses a freezing score that combines the magnitude of weights and smoothed gradient uncertainty to decide when to freeze projection matrices.\nB. The feature transformation vectors in AFLoRA remain frozen throughout training to maintain stable feature spaces while the projection matrices adapt.\nC. AFLoRA initializes both down-projection and up-projection matrices with Kaiming Uniform and trains them alongside transform vectors before adaptive freezing.\nD. The intermediate linear layer's down-projection matrices in FFN modules require longer training periods before freezing compared to other components.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "70",
+        "question": "Which experimental observations from the paper validate AFLoRA's design choices over ELoRA and LoRA?\nA. Freezing the projection matrices in attention layers while adaptively training FFN layer projections improves task-specific performance and reduces parameters.\nB. AFLoRA achieves comparable FLOPs efficiency to LoRA while using 9.5× fewer parameters, demonstrating better parameter-performance trade-offs.\nC. ELoRA requires high-rank frozen projection matrices due to its lack of adaptive freezing, leading to higher FLOPs and runtime compared to AFLoRA.\nD. Adaptive freezing of projection matrices after only one epoch consistently outperforms fully trainable projections across all GLUE tasks.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "71",
+        "question": "Which of the following limitations or experimental observations are explicitly discussed in the paper regarding the REPE framework?\nA. The performance of REPE is heavily dependent on the availability of high-quality machine translation systems for generating code-switched sentences.\nB. REPE’s reliance on bilingual dictionaries for code-switching may introduce noise, particularly when dictionaries lack coverage of domain-specific terms.\nC. Ablation studies demonstrate that removing the prediction-level alignment component causes a larger performance drop than removing the self-distillation layer.\nD. The paper identifies that using Sinkhorn-Knopp for optimal transport achieves higher accuracy than IPOT but at the cost of significantly slower training speeds.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "74",
+        "question": "Based on the experimental results in closed information extraction, which of the following observations about the impact of constrained decoder model size on SketchGCD’s performance are supported?\nA. Larger constrained decoders (e.g., LLaMA-2-70\nB. consistently achieve higher F1-scores than smaller decoders due to their superior ability to handle complex syntactic constraints.\nB. Using a constrained decoder with fewer parameters (e.g., LLaMA-2-7\nB. can yield competitive or better results than larger decoders when the refinement task is relatively simple.\nC. The performance gap between constrained decoders of different sizes diminishes when the initial sketch from the blackbox LLM contains significant semantic errors requiring correction.\nD. The choice of constrained decoder size is inversely correlated with the structural complexity of the constraints, with smaller decoders performing better for highly nested grammars.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "76",
+        "question": "Which of the following statements accurately describe key methodological differences between Soft Self-Consistency (SOFT-S\nC. and traditional Self-Consistency in LLM-agent tasks?\nA. SOFT-SC replaces majority voting with a continuous scoring mechanism based on aggregated token likelihoods to address sparsely distributed valid actions.\nB. Unlike SC, SOFT-SC requires exact textual matches between generated action sequences to compute consistency scores, limiting its efficiency in interactive tasks.\nC. SOFT-SC can leverage token probabilities from smaller open-source models to rescore outputs from black-box models, enabling compatibility with proprietary LLMs.\nD. SC relies on temperature-based sampling followed by exact-match voting, while SOFT-SC uses adaptive thresholds to dynamically adjust the number of samples required for reliable selection.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "77",
+        "question": "Which of the following statements about RecGPT-7B-Instruct's performance compared to baselines are supported by the experimental results?\nA. RecGPT-7B-Instruct achieved lower RMSE and MAE values than P5 across all rating prediction datasets by leveraging textual reviews as contextual signals.\nB. The model substantially outperformed MPT-7B with supervised fine-tuning in sequential recommendation tasks due to domain-adaptive pre-training on interaction patterns.\nC. ChatGPT demonstrated superior HR@10 scores compared to RecGPT-7B-Instruct on beauty product recommendations despite lacking task-specific fine-tuning.\nD. RecGPT-7B-Instruct showed improved generalization through ALiBi attention mechanisms, enabling better handling of long user interaction sequences than matrix factorization methods.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "77",
+        "question": "Which of the following data preprocessing steps were implemented to address data leakage and ensure evaluation integrity?\nA. Splitting datasets into pre-training and fine-tuning subsets at the user level to prevent user overlap.\nB. Removing interactions from training sets if they appeared in test sets for cross-task consistency.\nC. Retaining demographic user information to enhance personalization during the fine-tuning phase.\nD. Filtering out users with fewer than five interactions to reduce data sparsity and noise.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "78",
+        "question": "Which of the following outcomes were demonstrated by ATLAS in comparisons with baseline models according to experimental results?\nA. Outperformed BART Scaffold in ROUGE scores for eLife lay summaries through multi-attribute control.\nB. Achieved higher human evaluation ratings than BART in factuality and comprehensiveness across both datasets.\nC. Surpassed GPT3.5-mdc in readability metrics for PLOS summaries despite lower ROUGE-1 scores.\nD. Showed degraded performance when removing background information control in ablation studies compared to full configuration.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "78",
+        "question": "Which of the following conclusions are supported by the human evaluation and baseline comparisons in the paper?\nA. ATLAS generates summaries with higher comprehensiveness scores than BART due to its ability to incorporate domain-specific jargon without simplification.\nB. GPT3.5-mdc outperforms ATLAS on PLOS lay summaries because it dynamically selects input-output examples based on the article’s abstract.\nC. ATLAS achieves higher layness and factuality scores than BART across both eLife and PLOS datasets, indicating better alignment with non-expert needs.\nD. The Dale-Chall Readability Score for ATLAS-generated summaries is inversely correlated with the inclusion of Background Information control tokens.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "79",
+        "question": "According to the analysis of error categories and their effects, which of the following models demonstrate improved robustness to specific noise types in the Financial domain?\nA. MAC-SQL shows higher accuracy on questions with spelling/syntactical errors due to its schema filtering and context enrichment mechanisms.\nB. DIN-SQL outperforms zero-shot GPT-4 on ambiguous questions requiring nested queries and external knowledge integration.\nC. Zero-shot GPT-4 achieves better performance on corrected SQL queries but struggles with string capitalization errors in dirty database values.\nD. Zero-shot GPT-3.5 exhibits reduced accuracy on questions with synonyms due to limited contextual understanding of domain-specific terminology.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "79",
+        "question": "Which of the following statements about the impact of noise in BIRD-Bench on model evaluation are supported by the study?\nA. Zero-shot prompting methods significantly underperform state-of-the-art prompting techniques when evaluated on the original dataset with uncorrected gold SQL queries.\nB. Correcting erroneous gold SQL queries in BIRD-Bench reduces the performance gap between zero-shot baselines and advanced prompting methods like DIN-SQL.\nC. Noise in questions disproportionately affects models relying on schema linking and decomposition compared to models using direct zero-shot inference.\nD. When evaluated on datasets with corrected gold SQL queries and noise-free questions, all models exhibit near-perfect accuracy, indicating noise is the primary performance bottleneck.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "79",
+        "question": "Which categories of noise were identified as prevalent in the financial domain of BIRD-Bench during the qualitative analysis?\nA. Questions containing punctuation errors that disrupt the syntactic structure of natural language inputs.\nB. Gold SQL queries with incorrect JOIN operations leading to mismatched associations between database entities.\nC. Ambiguous questions requiring external knowledge or subjective interpretation to resolve semantic vagueness.\nD. String capitalization mismatches between natural language questions and lowercase database entries affecting query execution.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "79",
+        "question": "Which of the following statements about the distribution and impact of noise in the BIRD-Bench dataset are supported by the study?\nA. The financial domain contains the highest proportion of noise in both questions and gold SQL queries compared to other domains like Toxicology or Superhero.\nB. Spelling/syntactical errors in questions are the most prevalent noise type across all domains, including California Schools and Thrombosis Prediction.\nC. Incorrect gold SQL queries in BIRD-Bench often arise from JOIN operations that misalign database entities, such as matching clients and accounts via district_id.\nD. Noise in questions, such as ambiguous phrasing or synonyms, disproportionately biases the benchmark toward models robust to syntactical errors rather than semantic understanding.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "80",
+        "question": "Which factors were identified as influencing variations in LLM-generated acceptance rates for job applicants?\nA. Occupational roles with strong gender stereotypes, such as secretary or mechanic, amplify biases against gender-mismatched candidates.\nB. Higher qualification levels (e.g., 'highly qualified') reduce demographic disparities, as models prioritize merit over name-based biases.\nC. Larger model sizes correlate with reduced variation in acceptance rates across demographic groups, suggesting improved fairness.\nD. The inclusion of synthetic resumes confounds results by introducing uncontrolled variables related to applicant experience.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "80",
+        "question": "Which factors significantly influence the magnitude and direction of LLM-generated hiring biases according to the experimental results?\nA. The inclusion of explicit qualification levels in prompts leads to higher acceptance rates for White male candidates in 'somewhat qualified' scenarios.\nB. Models exhibit human-like gender-occupation stereotypes, such as lower acceptance rates for male applicants in stereotypically feminine roles like secretary.\nC. Under-specified job roles amplify racial disparities in acceptance rates compared to prompts with occupation-specific contextual information.\nD. Smaller models like Mistral-7b demonstrate stronger correlations between applicant gender and acceptance rates than larger models across all templates.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "80",
+        "question": "Which of the following statements about demographic disparities in LLM-generated hiring decisions are supported by the study's findings?\nA. Hispanic male names consistently received the lowest acceptance rates across multiple models and settings, reflecting real-world labor market discrimination patterns.\nB. Black female applicants were universally disadvantaged compared to White male applicants in all occupational roles and qualification levels.\nC. Models exhibited higher acceptance rates for White male names in roles with unspecified qualifications but favored female names for positions requiring minimal education.\nD. Larger models like Llama2-70b showed reduced variation in acceptance rates across demographic groups compared to smaller models, suggesting improved fairness.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "81",
+        "question": "Which of the following comparisons between SEM-based and gloss-based SLT systems are supported by the experimental results in the paper?\nA. SEM-based systems converge faster during training compared to gloss-based systems when using equivalent supervision mechanisms.\nB. Gloss-free SEM-based architectures achieve performance comparable to gloss-dependent systems when pretrained on large-scale multilingual textual corpora.\nC. The multitask learning approach in sign2(sem+text) improves robustness to long sentences by combining visual-semantic alignment with cross-entropy text generation loss.\nD. The translation quality gap between SEM-based and gloss-based systems persists for languages with limited monolingual text data due to inferior sentence embedding quality.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "81",
+        "question": "Which of the following statements about the SEM-based architectures and their training objectives are supported by the paper?\nA. The sign2sem module uses a Siamese network pretrained on raw text data to minimize the cosine similarity loss between predicted and target sentence embeddings.\nB. The sem2text module employs a cross-entropy loss for text reconstruction, with pretrained mBART decoders outperforming SLTr architectures due to their multilingual pretraining.\nC. The multitask sign2(sem+text) approach combines mean squared error loss for sentence embedding alignment and cross-entropy loss for text generation in an end-to-end framework.\nD. Multilingual training with merged datasets consistently improves translation quality compared to monolingual setups across all metrics due to enhanced cross-lingual transfer.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "82",
+        "question": "Based on the intrinsic evaluation metrics, which of the following effects are observed when applying the 'least tokens' inference strategy across tokenizers?\nA. It consistently improves cognitive plausibility metrics by aligning segmentations with human lexical decision patterns.\nB. It reduces the average number of tokens per word more effectively than likelihood-based or dropout merge strategies.\nC. It introduces significant morphological misalignment compared to deterministic merge rules for BPE tokenizers.\nD. It underperforms longest prefix inference for SaGe tokenizers in retaining contextualized morphological boundaries during segmentation.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "82",
+        "question": "Which of the following statements about the performance of tokenizer inference methods in the benchmark evaluation are correct?\nA. SaGe tokenizers using the longest prefix inference method achieve the highest morphological alignment scores compared to all other tokenizers and inference strategies.\nB. The least tokens inference strategy demonstrates superior cognitive plausibility across BPE, WordPiece, UnigramLM, and SaGe tokenizers compared to their default inference methods.\nC. BPE tokenizers employing dropout merge rules exhibit higher Rényi efficiency scores than those using deterministic merge rules, despite lower morphological alignment.\nD. Greedy inference methods such as longest token and longest suffix universally minimize the average number of tokens per word across all vocabulary sizes and tokenizer types.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "83",
+        "question": "Which of the following statements about German dialect speakers' attitudes toward hypothetical language technologies (LTs) are supported by the survey findings?\nA. Dialect speakers strongly favor technologies that process dialectal input, such as virtual assistants responding to spoken commands in their dialect.\nB. Speech-to-text systems that transcribe dialectal audio into written Standard German are more preferred than those producing written dialect output.\nC. Machine translation tools that convert dialect texts into foreign languages are viewed as equally useful as those translating into Standard German.\nD. Spellcheckers for dialects are widely opposed due to concerns about enforcing arbitrary standardized orthographies.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "84",
+        "question": "Which of the following statements about the capabilities of LLMs in humor editing and dataset creation, as discussed in the paper, are correct?\nA. LLMs like GPT-4 and GPT-3.5 consistently outperform human satirical writers in generating humorous headlines when prompted to edit non-humorous texts.\nB. Synthetic unfunned data generated by GPT-4 results in humor classifiers with smaller accuracy drops compared to models trained on human-edited data, as validated on the Unfun corpus.\nC. The ROBERTA-SWAP baseline method, which replaces tokens based on low probability ratios, achieves comparable coherence and realness ratings to human crowd-workers in unfunning tasks.\nD. GPT-4’s ability to 'unfun' humor generalizes to code-mixed English-Hindi tweets, producing synthetic data rated as highly coherent and non-humorous by bilingual annotators.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "85",
+        "question": "Which of the following statements accurately describe the adversarial training objectives and experimental outcomes of the proposed privacy neuron localization method?\nA. The L0 regularization term penalizes the number of localized neurons to minimize their overlap with general-knowledge neurons.\nB. The adversarial loss function preserves the model’s language modeling ability by maximizing the likelihood of non-PII tokens during training.\nC. The hyperparameter η controlling the penalty on localized neurons is set to zero to prioritize PII memorization elimination over general performance.\nD. Deactivating localized privacy neurons reduces PII leakage metrics (MA and EL) while maintaining comparable performance on general information prediction.",
+        "correct_answer": ""    },
+    {
+        "paper_id": "85",
+        "question": "Which of the following statements about the characteristics and findings of privacy neurons in LLMs are correct?\nA. Exceeding a 2% ratio of deactivated privacy neurons leads to entanglement with general knowledge, reducing predictive accuracy on non-sensitive information.\nB. Privacy neurons are distributed across all layers of the model but exhibit a reduced concentration in specific intermediate layers.\nC. The majority of privacy neurons responsible for PII memorization are localized within the MLP components of the model architecture.\nD. Privacy neurons demonstrate specificity, with distinct subsets of neurons memorizing different categories of PII (e.g., names, dates, addresses).",
+        "correct_answer": ""    },
+    {
+        "paper_id": "85",
+        "question": "Which of the following statements accurately describe the experimental outcomes and mitigation strategies for PII leakage proposed in the paper?\nA. Deactivating localized privacy neurons reduces PII memorization accuracy by over 50% while preserving general language modeling performance.\nB. The proposed method outperforms Scrubbed Fine-tuning and DPD in reducing EL for PII across all tested datasets.\nC. Penalizing the number of localized neurons via hyperparameter η ensures that fewer than 1% of total neurons are deactivated, preventing entanglement with general knowledge.\nD. Privacy neurons identified for email addresses exhibit minimal overlap with those responsible for memorizing legal case identifiers, demonstrating category-specific localization.",
+        "correct_answer": ""    }
+]
