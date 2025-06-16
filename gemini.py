@@ -1,3 +1,4 @@
+from google import genai
 import os
 import re
 import pymupdf4llm
@@ -5,11 +6,7 @@ from openai import OpenAI
 import json
 from collections import defaultdict
 
-# 初始化 DeepSeek 客户端
-client = OpenAI(
-    api_key="sk-8484a8cf027442d480c5cb375a15cdee",  # 替换为你的实际 API 密钥
-    base_url="https://api.deepseek.com"
-)
+
 
 # 目录路径
 papers_dir = "papers"
@@ -112,18 +109,13 @@ for paper_id, questions in question_groups.items():
 
         full_prompt = f"{user_question}\n\n以下是论文内容：\n\n{clean_text}\n\n以下是提出的问题：{question_text}"
 
-        # 调用 DeepSeek Chat API
-        response = client.chat.completions.create(
-            model="deepseek-reasoner",
-            messages=[
-                {"role": "system", "content": "你是一个擅长自然语言处理的AI助手，善于分析和总结学术论文。"},
-                {"role": "user", "content": full_prompt}
-            ],
-            stream=False
-        )
+        client = genai.Client(api_key="AIzaSyDm7ETIqyzpCU2L9p9Bu5qguHygnr9xE68")
 
-        # 获取模型回答并打印
-        answer = response.choices[0].message.content.strip()
+        response = client.models.generate_content(
+            model="gemini-2.5-flash-preview-05-20", contents=full_prompt
+        )
+       # 获取模型回答并打印
+        answer = response.text
         print(f"问题：{question_text}\n模型回答：{answer}\n")
 
         # 收集模型回答
@@ -134,9 +126,7 @@ for paper_id, questions in question_groups.items():
         })
 
 # 保存结果到 JSON 文件
-with open("multi_choice_answers.json", "w", encoding="utf-8") as f:
+with open("gemini_choice_answers.json", "w", encoding="utf-8") as f:
     json.dump(results, f, indent=2, ensure_ascii=False)
 
-print("处理完成，答案已保存到 'multi_choice_answers.json' 文件中。")
-
-
+print("处理完成，答案已保存到 'gemini_choice_answers.json' 文件中。")

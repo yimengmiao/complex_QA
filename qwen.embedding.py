@@ -11,7 +11,7 @@ import re
 
 # === 配置 ===
 PAPER_DIR = "papers"
-VECTOR_DIR = "vector_indexes"
+VECTOR_DIR = "vector"
 INPUT_JSON = "multi_choice_questions.json"
 OUTPUT_JSON = "deepseek_output_with_answers.json"
 
@@ -71,6 +71,12 @@ for paper_id, questions in questions_by_paper.items():
         if not docs:
             print(f"⚠️ 文档为空或无有效段落：{paper_id}")
             continue
+
+        # 在这里打印出每个文档的内容，查看提取的文本
+        for idx, doc in enumerate(docs):
+            print(f"=== 文档 {idx + 1} ===")
+            print(doc.page_content[:500])  # 打印每个文档的前500个字符
+            print("\n" + "=" * 50 + "\n")
 
         # ✅ 3. 构建向量数据库（如果不存在）
         vectorstore = Chroma.from_documents(
